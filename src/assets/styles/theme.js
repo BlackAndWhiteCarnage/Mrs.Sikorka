@@ -1,0 +1,20 @@
+export const theme = {
+  colors: {
+    white: '#FFFFFF',
+    darkWhite: '#F9F9F9',
+    darkGrey: '#414141',
+    beige: '#F3E5DA',
+    beigeDark1: '#EEDDD0',
+    beigeDark2: '#DBC2AC',
+    beigeDark3: '#D1B79E',
+  },
+  fontSize: {
+    xl: '36px',
+    l: '24px',
+    m: '14px',
+    s: '12px',
+  },
+  borderRadius: {
+    radius: '5px',
+  },
+};
