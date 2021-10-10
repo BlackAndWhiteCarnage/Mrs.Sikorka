@@ -4,6 +4,7 @@ export const theme = {
     darkWhite: '#F9F9F9',
     darkGrey: '#414141',
     beige: '#F3E5DA',
+    beigeDark: '#F3E5DA',
     beigeDark1: '#EEDDD0',
     beigeDark2: '#DBC2AC',
     beigeDark3: '#D1B79E',

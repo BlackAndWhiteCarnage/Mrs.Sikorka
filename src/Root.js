@@ -1,5 +1,5 @@
 import RootProvider from 'hoc/RootProvider';
-import Navigation from 'components/organisms/Navigation';
+import Navigation from 'components/organisms/Navigation/Navigation';
 import { Switch, Route } from 'react-router-dom';
 
 function Root() {
