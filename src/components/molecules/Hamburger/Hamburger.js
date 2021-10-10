@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// COMPONENTS
+// ATOMS
 import HamburgerLine from 'components/atoms/HamburgerLine/HamburgerLine';
 // STYLES
 import { Wrapper } from './Hamburger.styles';

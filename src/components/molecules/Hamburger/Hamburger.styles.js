@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
   @media screen and (min-width: 1200px) {
     display: none;
   }

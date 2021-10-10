@@ -25,3 +25,29 @@ export const NavItemsWrapper = styled.ul`
     width: 90%;
   }
 `;
+
+export const HomeAndHambrgerWrapper = styled.div`
+  position: absolute;
+  width: auto;
+  height: 35px;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+  transition: 0.5s 0.85s ease;
+  &.show {
+    transition: 0.5s ease;
+    bottom: 0px;
+  }
+  @media screen and (max-width: 1200px) {
+    position: static;
+    transform: none;
+    z-index: 999999;
+    display: flex;
+    width: 35%;
+    max-width: 160px;
+    align-items: center;
+    justify-content: space-between;
+    outline: none;
+  }
+`;
