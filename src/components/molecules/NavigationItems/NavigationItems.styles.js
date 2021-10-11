@@ -44,6 +44,8 @@ export const HomeAndHambrgerWrapper = styled.div`
     transform: none;
     z-index: 999999;
     display: flex;
+    overflow: hidden;
+    height: auto;
     width: 35%;
     max-width: 160px;
     align-items: center;

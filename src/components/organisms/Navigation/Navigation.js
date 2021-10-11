@@ -5,8 +5,8 @@ import NavigationItems from 'components/molecules/NavigationItems/NavigationItem
 const Navigation = () => {
   const [toggleModal, setToggleModal] = useState(false);
 
-  const toggleModalHandler = () => {
-    setToggleModal(!toggleModal);
+  const toggleModalHandler = (bool) => {
+    setToggleModal(bool !== false ? !toggleModal : false);
   };
 
   return (

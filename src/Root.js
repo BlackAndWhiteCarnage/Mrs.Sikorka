@@ -1,6 +1,7 @@
 import RootProvider from 'hoc/RootProvider';
 import Navigation from 'components/organisms/Navigation/Navigation';
 import { Switch, Route } from 'react-router-dom';
+import Home from 'components/pages/Home/Home';
 
 function Root() {
   return (
@@ -8,7 +9,7 @@ function Root() {
       <Navigation />
       <Switch>
         <Route exact path='/'>
-          <h1>MRS.SIKORKA</h1>
+          <Home />
         </Route>
         <Route exact path='/o_mnie'>
           <h1>O Mnie</h1>

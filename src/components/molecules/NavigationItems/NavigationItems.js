@@ -22,7 +22,7 @@ const NavigationItems = ({ toggleModal, toggleModalHandler }) => {
         <NavItem to='/cennik' text='Cennik' />
         <NavItem to='/kontakt' text='Kontakt' />
         <HomeAndHambrgerWrapper className={location !== '/' && 'show'}>
-          <HomeIcon location={location} />
+          <HomeIcon location={location} toggleModalHandler={toggleModalHandler} />
           <Hamburger toggleModalHandler={toggleModalHandler} toggleModal={toggleModal} />
         </HomeAndHambrgerWrapper>
       </NavItemsWrapper>

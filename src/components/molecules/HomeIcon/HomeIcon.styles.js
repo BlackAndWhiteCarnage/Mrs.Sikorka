@@ -13,12 +13,17 @@ export const Wrapper = styled.div`
   &.show {
     transition: 0.5s ease;
     bottom: -40px;
+    @media screen and (max-width: 1200px) {
+      transition: 0.5s 1s ease;
+      transform: translate(0, 0);
+    }
   }
   @media screen and (max-width: 1200px) {
     position: static;
     transform: none;
     width: 50px;
     height: 40px;
+    transform: translate(0, 50px);
     img {
       height: 100%;
       @media screen and (max-width: 680px) {
