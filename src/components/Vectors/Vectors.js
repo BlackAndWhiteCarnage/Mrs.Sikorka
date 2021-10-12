@@ -1,18 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-// DATA
-import { homeVectosPaths } from 'data/vectors';
 // STYLES
-import { Vector } from './HomeVectors.styles';
+import { Vector } from './Vectors.styles';
 
-export const HomeVectors = () => {
+const Vectors = ({ vectorsData }) => {
   const [ref, inView] = useInView();
 
   return (
     <>
-      {homeVectosPaths.map(({ path, duration, delay }) => (
-        <Vector ref={ref} fill='none' viewBox='0 0 1920 447'>
+      {vectorsData.map(({ path, duration, delay }, i) => (
+        <Vector ref={ref} fill='none' viewBox='0 0 1920 447' key={i}>
           <motion.path
             d={path}
             stroke='#EEDDD0'
@@ -24,4 +23,10 @@ export const HomeVectors = () => {
       ))}
     </>
   );
+};
+
+export default Vectors;
+
+Vectors.propTypes = {
+  vectorsData: PropTypes.array.isRequired,
 };

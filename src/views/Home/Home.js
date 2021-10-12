@@ -5,7 +5,9 @@ import CoffeAndLaptopImg from 'assets/images/CoffeAndLaptopImage.jpg';
 import nameIcon from 'assets/icons/name-icon.svg';
 import HomeInfo from 'components/HomeInfo/HomeInfo';
 // VECTORS
-import { HomeVectors } from 'components/Vectors/HomeVectors';
+import Vectors from 'components/Vectors/Vectors';
+// DATA
+import { homeVectosPaths } from 'data/vectorsParams';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -144,7 +146,7 @@ const SecondImageWrapper = styled.div`
 const Home = () => {
   return (
     <>
-      <HomeVectors />
+      <Vectors vectorsData={homeVectosPaths} />
       <Wrapper>
         <FirstImageWrapper>
           <ImageWrapper className='first'>
