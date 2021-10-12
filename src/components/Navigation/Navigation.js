@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Modal from 'components/molecules/Modal/Modal';
-import NavigationItems from 'components/molecules/NavigationItems/NavigationItems';
+// COMPONENTS
+import Modal from 'components/Modal/Modal';
+import NavBarItems from 'components/NavBarItems/NavBarItems';
 
 const Navigation = () => {
   const [toggleModal, setToggleModal] = useState(false);
@@ -11,7 +12,7 @@ const Navigation = () => {
 
   return (
     <>
-      <NavigationItems toggleModal={toggleModal} toggleModalHandler={toggleModalHandler} />
+      <NavBarItems toggleModal={toggleModal} toggleModalHandler={toggleModalHandler} />
       <Modal toggleModal={toggleModal} toggleModalHandler={toggleModalHandler} />
     </>
   );

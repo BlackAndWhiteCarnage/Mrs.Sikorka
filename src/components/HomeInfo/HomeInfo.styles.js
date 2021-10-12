@@ -23,3 +23,24 @@ export const Wrapper = styled.div`
     height: 220px;
   }
 `;
+
+export const Line = styled.div`
+  width: 30%;
+  height: 3px;
+  background: ${({ theme }) => theme.colors.beigeDark3};
+  border-radius: ${({ theme }) => theme.borderRadius.radius};
+`;
+
+export const Text = styled.p`
+  width: 80%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: ${({ theme }) => theme.fontSize.m};
+  @media screen and (max-width: 1200px) {
+    font-size: ${({ theme }) => theme.fontSize.s};
+  }
+  &.break {
+    word-break: break-word;
+  }
+`;

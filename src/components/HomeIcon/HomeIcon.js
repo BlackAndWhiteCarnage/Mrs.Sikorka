@@ -15,6 +15,7 @@ const HomeIcon = ({ location, toggleModalHandler }) => (
 
 HomeIcon.propTypes = {
   location: PropTypes.string.isRequired,
+  toggleModalHandler: PropTypes.func.isRequired,
 };
 
 export default HomeIcon;

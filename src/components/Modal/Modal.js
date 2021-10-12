@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 // COMPONENTS
-import ModalNavItem from 'components/atoms/ModalNavItem/ModalNavItem';
+import NavItem from 'components/NavItem/NavItem';
 // STYLES
 import { Wrapper, ModalItems } from './Modal.styles';
 
@@ -13,10 +13,10 @@ const Modal = ({ toggleModal, toggleModalHandler }) => {
   return (
     <Wrapper className={toggleModal && 'show'} onClick={toggleModalHandler}>
       <ModalItems>
-        <ModalNavItem text='O Mnie' className={toggleModal && 'show'} to='/o_mnie' />
-        <ModalNavItem text='Oferta' className={toggleModal && 'show'} to='/oferta' />
-        <ModalNavItem text='Cennik' className={toggleModal && 'show'} to='/cennik' />
-        <ModalNavItem text='Kontakt' className={toggleModal && 'show'} to='/kontakt' />
+        <NavItem text='O Mnie' className={`${toggleModal && 'show'} modalItem`} to='/o_mnie' />
+        <NavItem text='Oferta' className={`${toggleModal && 'show'} modalItem`} to='/oferta' />
+        <NavItem text='Cennik' className={`${toggleModal && 'show'} modalItem`} to='/cennik' />
+        <NavItem text='Kontakt' className={`${toggleModal && 'show'} modalItem`} to='/kontakt' />
       </ModalItems>
     </Wrapper>
   );

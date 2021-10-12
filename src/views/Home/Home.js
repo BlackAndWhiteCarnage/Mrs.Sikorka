@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import EwelinaSikoraImg from 'assets/images/EwelinaSikoraImage.jpg';
 import CoffeAndLaptopImg from 'assets/images/CoffeAndLaptopImage.jpg';
 import nameIcon from 'assets/icons/name-icon.svg';
-// MOLECULES
-import HomeInfo from 'components/molecules/HomeInfo/HomeInfo';
+import HomeInfo from 'components/HomeInfo/HomeInfo';
 // VECTORS
 import { HomeVectors } from 'components/Vectors/HomeVectors';
 

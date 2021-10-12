@@ -1,7 +1,7 @@
 import RootProvider from 'hoc/RootProvider';
-import Navigation from 'components/organisms/Navigation/Navigation';
+import Navigation from 'components/Navigation/Navigation';
 import { Switch, Route } from 'react-router-dom';
-import Home from 'components/pages/Home/Home';
+import Home from 'views/Home/Home';
 
 function Root() {
   return (
