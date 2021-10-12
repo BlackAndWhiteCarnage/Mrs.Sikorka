@@ -9,6 +9,7 @@ export const Vector = styled.svg`
   height: 100%;
   max-height: 100vh;
   stroke-width: 2;
+  z-index: -1;
   @media screen and (max-width: 680px) {
     stroke-width: 10;
   }

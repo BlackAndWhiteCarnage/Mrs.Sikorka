@@ -47,9 +47,6 @@ export const IconWrapper = styled(Link)`
     border: none;
     outline: none;
   }
-  img {
-    transition: 0.5s ease;
-  }
   @media screen and (min-width: 1200px) {
     opacity: 1;
     &::before,
@@ -71,10 +68,6 @@ export const IconWrapper = styled(Link)`
       bottom: -20px;
     }
     &:hover {
-      img {
-        transform: scale(1.1);
-        transition: 0.5s ease;
-      }
       &::before {
         transition: 0.5s 0.25s ease;
         width: 50%;

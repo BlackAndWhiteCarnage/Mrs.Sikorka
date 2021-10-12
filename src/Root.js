@@ -1,7 +1,9 @@
 import RootProvider from 'hoc/RootProvider';
 import Navigation from 'components/Navigation/Navigation';
 import { Switch, Route } from 'react-router-dom';
+// VIEWS
 import Home from 'views/Home/Home';
+import PriceList from 'views/PriceList/PriceList';
 
 function Root() {
   return (
@@ -18,7 +20,7 @@ function Root() {
           <h1>Oferta</h1>
         </Route>
         <Route exact path='/cennik'>
-          <h1>Cennik</h1>
+          <PriceList />
         </Route>
         <Route exact path='/kontakt'>
           <h1>Kontakt</h1>
