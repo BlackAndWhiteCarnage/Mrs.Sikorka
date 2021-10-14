@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   transform: translate(-50%, -50%);
   width: 800px;
   height: 600px;
-  @media screen and (max-width: 1366px) {
+  @media screen and (max-width: 1600px) {
     height: 450px;
     width: 650px;
   }
@@ -29,8 +29,8 @@ export const TextWrapper = styled.div`
   position: absolute;
   width: 220px;
   height: 300px;
-  border: 3px solid ${({ theme }) => theme.colors.beigeDark3};
-  border-radius: ${({ theme }) => theme.borderRadius.radius};
+  border: 2px solid ${({ theme }) => theme.colors.beigeDark3};
+  border-radius: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -39,8 +39,8 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  @media screen and (max-width: 1366px) {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  @media screen and (max-width: 1600px) {
     width: 200px;
     height: 250px;
   }
@@ -52,9 +52,9 @@ export const TextWrapper = styled.div`
 
 export const Line = styled.div`
   width: 30%;
-  height: 3px;
+  height: 2px;
   background: ${({ theme }) => theme.colors.beigeDark3};
-  border-radius: ${({ theme }) => theme.borderRadius.radius};
+  border-radius: 10px;
 `;
 
 export const Text = styled.p`
@@ -75,12 +75,13 @@ export const ImageWrapperAbsolute = styled.div`
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   &.firstImage {
     width: 350px;
     height: 500px;
     top: 50%;
-    @media screen and (max-width: 1366px) {
+    @media screen and (max-width: 1600px) {
       width: 300px;
       height: 450px;
     }
@@ -100,7 +101,7 @@ export const ImageWrapperAbsolute = styled.div`
     width: 400px;
     height: 600px;
     right: 0;
-    @media screen and (max-width: 1366px) {
+    @media screen and (max-width: 1600px) {
       width: 320px;
       height: 450px;
     }
@@ -128,13 +129,14 @@ export const ImageWrapperRelative = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 3px solid ${({ theme }) => theme.colors.beigeDark3};
-    border-radius: ${({ theme }) => theme.borderRadius.radius};
+    border: 2px solid ${({ theme }) => theme.colors.beigeDark3};
+    /* border-radius: ${({ theme }) => theme.borderRadius.radius}; */
+    border-radius: 10px;
   }
   &.firstImage {
     &::before {
-      left: -20px;
-      top: 20px;
+      left: -10px;
+      top: 10px;
       z-index: -1;
       @media screen and (max-width: 1200px) {
         left: -10px;
@@ -144,8 +146,8 @@ export const ImageWrapperRelative = styled.div`
   }
   &.secondImage {
     &::before {
-      left: 20px;
-      top: -20px;
+      left: 10px;
+      top: -10px;
       z-index: -1;
       @media screen and (max-width: 1200px) {
         left: 10px;
@@ -158,7 +160,8 @@ export const ImageWrapperRelative = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-  border-radius: ${({ theme }) => theme.borderRadius.radius};
+  /* border-radius: ${({ theme }) => theme.borderRadius.radius}; */
+  border-radius: 10px;
   object-fit: cover;
 `;
 
@@ -168,7 +171,7 @@ export const Name = styled.img`
   top: 0;
   width: 55px;
   height: auto;
-  @media screen and (max-width: 1366px) {
+  @media screen and (max-width: 1600px) {
     width: 40px;
     left: -65px;
   }

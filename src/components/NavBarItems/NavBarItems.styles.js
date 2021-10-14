@@ -8,8 +8,8 @@ export const Wrapper = styled.nav`
   height: 75px;
   background: ${({ theme }) => theme.colors.white};
   z-index: 9999;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-top: 4px solid ${({ theme }) => theme.colors.beigeDark3};
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-top: 2px solid ${({ theme }) => theme.colors.beigeDark3};
   @media screen and (max-width: 680px) {
     height: 75px;
   }
@@ -18,7 +18,7 @@ export const Wrapper = styled.nav`
 export const NavItemsWrapper = styled.ul`
   margin: auto;
   height: 100%;
-  max-width: 1350px;
+  max-width: 1250px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,7 +73,7 @@ export const Logo = styled.div`
     position: absolute;
     content: '';
     width: 100%;
-    height: 4px;
+    height: 2px;
     background: ${({ theme }) => theme.colors.beigeDark3};
     left: 0;
     bottom: 0;

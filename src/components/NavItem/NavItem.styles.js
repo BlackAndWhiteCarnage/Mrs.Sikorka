@@ -2,55 +2,30 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const Wrapper = styled(NavLink).attrs({ activeClassName: 'active-link' })`
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+  color: ${({ theme }) => theme.colors.darkGrey};
+  letter-spacing: 2px;
   &.desktopNavItem {
     position: relative;
     width: 130px;
     height: 40px;
-    list-style: none;
     text-transform: uppercase;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 3px;
     font-size: ${({ theme }) => theme.fontSize.m};
     cursor: pointer;
     transition: 0.35s ease;
-    color: ${({ theme }) => theme.colors.darkGrey};
-    text-decoration: none;
     padding: 20px 30px;
     white-space: nowrap;
-    border-radius: 10px;
-    &::before,
-    &::after {
-      position: absolute;
-      left: 0;
-      content: '';
-      width: 100%;
-      height: 100%;
-      background: ${({ theme }) => theme.colors.beigeDark1};
-      z-index: -1;
-      transition: 0.25s ease;
-    }
-    &::before {
-      top: 100%;
-    }
-    &::after {
-      top: -100%;
-    }
+    border-radius: 5px;
     &:hover,
     &:focus,
     &.active-link {
-      transition: 0.35s 0.25s ease-out;
-      letter-spacing: 1px;
-      background: ${({ theme }) => theme.colors.darkGrey};
-      color: ${({ theme }) => theme.colors.beigeDark3};
-      outline: none;
-      &::before,
-      &::after {
-        top: 0;
-        transition: 0.5s ease;
-      }
     }
     @media screen and (max-width: 1200px) {
       display: none;
@@ -62,14 +37,8 @@ export const Wrapper = styled(NavLink).attrs({ activeClassName: 'active-link' })
     left: 0;
     width: 100%;
     height: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 3px;
-    text-transform: uppercase;
     font-size: ${({ theme }) => theme.fontSize.l};
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.darkGrey};
     @media screen and (max-width: 680px) {
       font-size: ${({ theme }) => theme.fontSize.m};
     }
@@ -112,7 +81,6 @@ export const Wrapper = styled(NavLink).attrs({ activeClassName: 'active-link' })
     &.active-link {
       background: ${({ theme }) => theme.colors.darkGrey};
       color: ${({ theme }) => theme.colors.beigeDark3};
-      letter-spacing: 5px;
     }
   }
 `;

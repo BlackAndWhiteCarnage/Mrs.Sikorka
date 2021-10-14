@@ -1,21 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// ICONS
-import arrowIcon from 'assets/icons/arrow-icon.svg';
 // COMPONENTS
 import Vectors from 'components/Vectors/Vectors';
 // STYLES
 import { Wrapper, TitleWrapper } from './ViewTitle.styles';
 
-const SectionTitle = ({ titleFirstPart, titleSecondPart, vectorsData }) => (
+const SectionTitle = ({ titleFirstPart, titleSecondPart, vectorsData, className }) => (
   <Wrapper>
     <Vectors vectorsData={vectorsData} />
-    <TitleWrapper>
+    <TitleWrapper className={className}>
       <h2>
         {titleFirstPart}
         <span> {titleSecondPart}</span>
       </h2>
-      <img src={arrowIcon} alt='Arrow Icon' />
     </TitleWrapper>
   </Wrapper>
 );

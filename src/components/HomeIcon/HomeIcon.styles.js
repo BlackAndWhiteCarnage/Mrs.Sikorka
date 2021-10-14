@@ -53,7 +53,7 @@ export const IconWrapper = styled(Link)`
     &::after {
       position: absolute;
       content: '';
-      height: 3px;
+      height: 2px;
       width: 0%;
       bottom: 0px;
       background: ${({ theme }) => theme.colors.beigeDark3};
@@ -61,11 +61,11 @@ export const IconWrapper = styled(Link)`
     }
     &::before {
       transition: 0.5s 0.5s ease;
-      bottom: -10px;
+      bottom: -5px;
     }
     &::after {
       transition: 0.5s 0.25s ease;
-      bottom: -20px;
+      bottom: -10px;
     }
     &:hover {
       &::before {

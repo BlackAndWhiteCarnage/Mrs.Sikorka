@@ -12,17 +12,16 @@ const GlobalStyle = createGlobalStyle`
         color: ${({ theme }) => theme.colors.darkGrey}
     }
     ::-webkit-scrollbar {
-        width: 15px;
+        width: 10px;
         background: ${({ theme }) => theme.colors.beigeDark};
     }
     ::-webkit-scrollbar-track {
         background: ${({ theme }) => theme.colors.beigeDark};
-        width: 15px;
+        width: 10px;
     }
     ::-webkit-scrollbar-thumb {
         background: ${({ theme }) => theme.colors.beigeDark3};
-        transition: 0.4s ease;
-
+        border-radius: 5px;
     }
 `;
 
