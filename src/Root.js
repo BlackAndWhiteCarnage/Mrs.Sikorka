@@ -4,6 +4,9 @@ import { Switch, Route } from 'react-router-dom';
 // VIEWS
 import Home from 'views/Home/Home';
 import PriceList from 'views/PriceList/PriceList';
+import Offer from 'views/Offer/Offer';
+import AboutMe from 'views/AboutMe/AboutMe';
+import Contact from 'views/Contact/Contact';
 
 function Root() {
   return (
@@ -14,16 +17,16 @@ function Root() {
           <Home />
         </Route>
         <Route exact path='/o_mnie'>
-          <h1>O Mnie</h1>
+          <AboutMe />
         </Route>
         <Route exact path='/oferta'>
-          <h1>Oferta</h1>
+          <Offer />
         </Route>
         <Route exact path='/cennik'>
           <PriceList />
         </Route>
         <Route exact path='/kontakt'>
-          <h1>Kontakt</h1>
+          <Contact />
         </Route>
       </Switch>
     </RootProvider>

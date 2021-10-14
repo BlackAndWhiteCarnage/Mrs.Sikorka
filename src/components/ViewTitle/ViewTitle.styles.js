@@ -24,7 +24,7 @@ export const TitleWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   h2 {
-    font-size: ${({ theme }) => theme.fontSize.xl};
+    font-size: ${({ theme }) => theme.fontSize.xxl};
     span {
       color: ${({ theme }) => theme.colors.beigeDark3};
     }
@@ -33,10 +33,15 @@ export const TitleWrapper = styled.div`
     height: 300px;
   }
   @media screen and (max-width: 680px) {
-    height: 200px;
+    width: 90%;
+    height: 250px;
     h2 {
-      font-size: ${({ theme }) => theme.fontSize.l};
-      max-width: 300px;
+      font-size: ${({ theme }) => theme.fontSize.xl};
     }
+  }
+  @media screen and (min-width: 200px) and (max-width: 920px) and (orientation: landscape) {
+    width: 65%;
+    height: 80%;
+    font-size: ${({ theme }) => theme.fontSize.m};
   }
 `;

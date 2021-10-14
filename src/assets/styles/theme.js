@@ -10,8 +10,9 @@ export const theme = {
     beigeDark3: '#D1B79E',
   },
   fontSize: {
-    xl: '36px',
-    l: '24px',
+    xxl: '36px',
+    xl: '24px',
+    l: '16px',
     m: '14px',
     s: '12px',
   },

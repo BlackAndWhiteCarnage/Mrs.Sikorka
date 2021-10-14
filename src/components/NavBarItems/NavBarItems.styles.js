@@ -5,9 +5,10 @@ export const Wrapper = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 75px;
   background: ${({ theme }) => theme.colors.white};
   z-index: 9999;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-top: 4px solid ${({ theme }) => theme.colors.beigeDark3};
   @media screen and (max-width: 680px) {
     height: 75px;
@@ -17,7 +18,7 @@ export const Wrapper = styled.nav`
 export const NavItemsWrapper = styled.ul`
   margin: auto;
   height: 100%;
-  max-width: 1150px;
+  max-width: 1350px;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -15,7 +15,7 @@ const SectionTitle = ({ titleFirstPart, titleSecondPart, vectorsData }) => (
         {titleFirstPart}
         <span> {titleSecondPart}</span>
       </h2>
-      <img src={arrowIcon} />
+      <img src={arrowIcon} alt='Arrow Icon' />
     </TitleWrapper>
   </Wrapper>
 );

@@ -11,6 +11,19 @@ const GlobalStyle = createGlobalStyle`
         background: ${({ theme }) => theme.colors.darkWhite};
         color: ${({ theme }) => theme.colors.darkGrey}
     }
+    ::-webkit-scrollbar {
+        width: 15px;
+        background: ${({ theme }) => theme.colors.beigeDark};
+    }
+    ::-webkit-scrollbar-track {
+        background: ${({ theme }) => theme.colors.beigeDark};
+        width: 15px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: ${({ theme }) => theme.colors.beigeDark3};
+        transition: 0.4s ease;
+
+    }
 `;
 
 export default GlobalStyle;

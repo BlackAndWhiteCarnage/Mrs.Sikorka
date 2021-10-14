@@ -5,7 +5,7 @@ export const Wrapper = styled(NavLink).attrs({ activeClassName: 'active-link' })
   &.desktopNavItem {
     position: relative;
     width: 130px;
-    height: 50px;
+    height: 40px;
     list-style: none;
     text-transform: uppercase;
     overflow: hidden;
@@ -16,9 +16,11 @@ export const Wrapper = styled(NavLink).attrs({ activeClassName: 'active-link' })
     font-size: ${({ theme }) => theme.fontSize.m};
     cursor: pointer;
     transition: 0.35s ease;
-    border-radius: ${({ theme }) => theme.borderRadius.radius};
     color: ${({ theme }) => theme.colors.darkGrey};
     text-decoration: none;
+    padding: 20px 30px;
+    white-space: nowrap;
+    border-radius: 10px;
     &::before,
     &::after {
       position: absolute;

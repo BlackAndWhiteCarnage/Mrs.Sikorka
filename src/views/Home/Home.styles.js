@@ -39,6 +39,7 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   @media screen and (max-width: 1366px) {
     width: 200px;
     height: 250px;
@@ -74,6 +75,7 @@ export const ImageWrapperAbsolute = styled.div`
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   &.firstImage {
     width: 350px;
     height: 500px;
