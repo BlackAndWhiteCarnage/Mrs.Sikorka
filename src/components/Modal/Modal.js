@@ -1,17 +1,16 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 // COMPONENTS
 import NavItem from 'components/NavItem/NavItem';
+// HELPERS
+import BlockScroll from 'helpers/BlockScroll';
 // STYLES
 import { Wrapper, ModalItems } from './Modal.styles';
 
 const Modal = ({ toggleModal, toggleModalHandler }) => {
-  useEffect(() => {
-    document.body.style.overflowY = `${toggleModal ? 'hidden' : 'scroll'}`;
-  }, [toggleModal]);
-
   return (
     <Wrapper className={toggleModal && 'show'} onClick={toggleModalHandler}>
+      <BlockScroll toggle={toggleModal} />
       <ModalItems>
         <NavItem text='O Mnie' className={`${toggleModal && 'show'} modalItem`} to='/o_mnie' />
         <NavItem text='Oferta' className={`${toggleModal && 'show'} modalItem`} to='/oferta' />

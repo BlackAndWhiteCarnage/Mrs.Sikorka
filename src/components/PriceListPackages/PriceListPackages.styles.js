@@ -228,3 +228,58 @@ export const Price = styled.p`
     color: ${({ theme }) => theme.colors.beigeDark3};
   }
 `;
+
+export const InfoModal = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 75px);
+  margin-top: 75px;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s 0.25s ease-out;
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background: ${({ theme }) => theme.colors.white};
+    font-size: ${({ theme }) => theme.fontSize.l};
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    display: flex;
+    top: 45%;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid ${({ theme }) => theme.colors.beigeDark2};
+    padding: 40px;
+    transition: 0.25s ease-out;
+    p {
+      width: 100%;
+      height: 50%;
+    }
+    @media screen and (max-width: 860px) {
+      height: 450px;
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  &.show {
+    pointer-events: all;
+    opacity: 1;
+    transition: 0.25s ease-out;
+    div {
+      top: 50%;
+      opacity: 1;
+      transition: 0.25s 0.25s ease-out;
+    }
+  }
+`;
