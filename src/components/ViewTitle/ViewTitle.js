@@ -5,10 +5,10 @@ import Vectors from 'components/Vectors/Vectors';
 // STYLES
 import { Wrapper, TitleWrapper } from './ViewTitle.styles';
 
-const SectionTitle = ({ titleFirstPart, titleSecondPart, vectorsData, className }) => (
+const SectionTitle = ({ titleFirstPart, titleSecondPart, vectorsData }) => (
   <Wrapper>
     <Vectors vectorsData={vectorsData} />
-    <TitleWrapper className={className}>
+    <TitleWrapper>
       <h2>
         {titleFirstPart}
         <span> {titleSecondPart}</span>
