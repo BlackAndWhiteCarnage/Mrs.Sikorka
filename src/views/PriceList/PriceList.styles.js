@@ -112,6 +112,10 @@ export const Button = styled.button`
   transition: 0.25s ease;
   cursor: pointer;
   border: 2px solid ${({ theme }) => theme.colors.beigeDark};
+  &.active {
+    pointer-events: none;
+    background: ${({ theme }) => theme.colors.beigeDark};
+  }
   @media screen and (max-width: 1250px) {
     font-size: ${({ theme }) => theme.fontSize.l};
   }
@@ -121,12 +125,20 @@ export const Button = styled.button`
 `;
 
 export const Packages = styled.div`
+  position: relative;
   width: 100%;
-  height: auto;
+  min-height: 1000px;
   display: flex;
   justify-content: space-between;
+  transition: 0.25s ease;
+  &.hide {
+    transform: scale(0.9);
+    opacity: 0;
+    transition: 0.25s ease;
+  }
   @media screen and (max-width: 860px) {
     flex-direction: column;
+    justify-content: flex-start;
   }
 `;
 
@@ -139,17 +151,10 @@ export const PackageListWrapper = styled.div`
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   border: 2px solid ${({ theme }) => theme.colors.beigeDark2};
-  position: relative;
-  &::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    border: 2px solid ${({ theme }) => theme.colors.beigeDark3};
-    top: 10px;
-    left: 10px;
-    z-index: -1;
-    border-radius: 10px;
+  @media screen and (min-width: 860px) {
+    &.half {
+      width: 48%;
+    }
   }
   @media screen and (max-width: 1600px) {
     font-size: ${({ theme }) => theme.fontSize.m};
@@ -218,6 +223,7 @@ export const PackageListItem = styled.li`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
+
   &:last-child {
     margin-bottom: 0;
   }

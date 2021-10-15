@@ -27,18 +27,6 @@ export const TitleWrapper = styled.div`
     letter-spacing: 2px;
     font-size: ${({ theme }) => theme.fontSize.l};
     border: 2px solid ${({ theme }) => theme.colors.beigeDark2};
-    position: relative;
-    &::before {
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 100%;
-      border: 2px solid ${({ theme }) => theme.colors.beigeDark3};
-      top: 10px;
-      left: 10px;
-      z-index: -1;
-      border-radius: 10px;
-    }
     span {
       color: ${({ theme }) => theme.colors.beigeDark3};
     }

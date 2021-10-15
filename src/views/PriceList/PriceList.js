@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import ViewTitle from 'components/ViewTitle/ViewTitle';
 import { homeVectosPaths } from 'data/vectorsParams';
 import Vectors from 'components/Vectors/Vectors';
@@ -22,9 +22,29 @@ import {
 
 const PriceList = () => {
   const [data, setData] = useState(socialMediaPackages);
+  const [toggle, setToggle] = useState(false);
+  const [refHeight, setRefHeight] = useState(0);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    setRefHeight(ref.current.offsetTop);
+  }, data);
 
   const changeDataHandler = (newData) => {
-    setData(newData);
+    toggleDataHandler(newData);
+  };
+
+  const toggleDataHandler = (newData) => {
+    setToggle(true);
+    window.scrollTo({
+      top: refHeight + window.innerHeight / 1.5,
+      left: '0',
+      behavior: 'smooth',
+    });
+    setTimeout(() => {
+      setData(newData);
+      setToggle(false);
+    }, 500);
   };
 
   return (
@@ -37,20 +57,26 @@ const PriceList = () => {
       <Wrapper>
         <Vectors vectorsData={homeVectosPaths} />
         <PackagesWrapper>
-          <PackagesOptions>
+          <PackagesOptions ref={ref}>
             <p>Czego dokładnie szukasz?</p>
             <ButtonsWrapper>
-              <Button onClick={() => changeDataHandler(socialMediaPackages)}>Social Media</Button>
-              <Button onClick={() => changeDataHandler(productPhotographyPackages)}>Fotografia Produktowa</Button>
-              <Button onClick={() => changeDataHandler(influencerMarketingPackages)}>Influencer Marketing</Button>
+              <Button onClick={() => changeDataHandler(socialMediaPackages)} className={data === socialMediaPackages && 'active'}>
+                Social Media
+              </Button>
+              <Button onClick={() => changeDataHandler(productPhotographyPackages)} className={data === productPhotographyPackages && 'active'}>
+                Fotografia Produktowa
+              </Button>
+              <Button onClick={() => changeDataHandler(influencerMarketingPackages)} className={data === influencerMarketingPackages && 'active'}>
+                Influencer Marketing
+              </Button>
               <Button>
                 <img src={alertIcon} />
               </Button>
             </ButtonsWrapper>
           </PackagesOptions>
-          <Packages>
-            {data.map(({ name, services, price }) => (
-              <PackageListWrapper>
+          <Packages className={toggle && 'hide'}>
+            {data.map(({ name, services, price }, i) => (
+              <PackageListWrapper className={data.length === 2 && 'half'}>
                 <PackageTitle>
                   <span>Pakiet</span>
                   <div />
