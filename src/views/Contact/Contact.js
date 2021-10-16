@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import ViewTitle from 'components/ViewTitle/ViewTitle';
 import { homeVectosPaths } from 'data/vectorsParams';
 import Form from 'components/Form/Form';
+import ScrollTop from 'helpers/ScrollTop';
 
 const Contact = () => {
   return (
@@ -12,6 +13,7 @@ const Contact = () => {
         titleSecondPart='poniżej znajdziesz formularz kontaktowy.'
         vectorsData={homeVectosPaths}
       />
+      <ScrollTop />
       <Form />
     </>
   );
