@@ -19,10 +19,9 @@ export const Wrapper = styled.button`
   margin: 5px;
   transition: 0.25s ease;
   cursor: pointer;
-  border: 2px solid ${({ theme }) => theme.colors.beigeDark};
+  border: 2px solid ${({ theme }) => theme.colors.beigeDark3};
   @media screen and (min-width: 1250px) {
     &:hover {
-      border: 2px solid ${({ theme }) => theme.colors.beigeDark3};
       background: ${({ theme }) => theme.colors.beigeDark};
     }
   }
