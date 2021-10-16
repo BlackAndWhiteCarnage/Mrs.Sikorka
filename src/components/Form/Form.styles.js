@@ -11,7 +11,7 @@ export const Wrapper = styled.section`
 
 export const FormWrapper = styled.form`
   position: relative;
-  width: 550px;
+  width: 600px;
   height: auto;
   display: flex;
   flex-direction: column;
