@@ -1,24 +1,21 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// COMPONENTS
 import ViewTitle from 'components/ViewTitle/ViewTitle';
-import { homeVectosPaths } from 'data/vectorsParams';
 import Form from 'components/Form/Form';
 import PageTransition from 'components/PageTransition/PageTransition';
+// VECTORS
+import { homeVectosPaths } from 'data/vectorsParams';
 
-const Contact = () => {
-  return (
-    <>
-      <PageTransition />
-      <ViewTitle
-        titleFirstPart='Miło mi że zainteresowała Cię moja oferta,'
-        titleSecondPart='poniżej znajdziesz formularz kontaktowy.'
-        vectorsData={homeVectosPaths}
-      />
-      <Form />
-    </>
-  );
-};
-
-Contact.propTypes = {};
+const Contact = () => (
+  <>
+    <PageTransition />
+    <ViewTitle
+      titleFirstPart='Miło mi że zainteresowała Cię moja oferta,'
+      titleSecondPart='poniżej znajdziesz formularz kontaktowy.'
+      vectorsData={homeVectosPaths}
+    />
+    <Form />
+  </>
+);
 
 export default Contact;

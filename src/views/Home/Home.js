@@ -1,4 +1,6 @@
 import React from 'react';
+// COMPONENTS
+import PageTransition from 'components/PageTransition/PageTransition';
 // IMAGES
 import EwelinaSikoraImg from 'assets/images/EwelinaSikoraImage.jpg';
 import CoffeAndLaptopImg from 'assets/images/CoffeAndLaptopImage.jpg';
@@ -10,8 +12,8 @@ import Vectors from 'components/Vectors/Vectors';
 import { homeVectosPaths } from 'data/vectorsParams';
 // STYLES
 import { Wrapper, TextWrapper, Line, Text, ImageWrapperAbsolute, ImageWrapperRelative, Image, Name } from './Home.styles';
-import { pageAnimation, slide, slider, sliderContainer } from 'assets/animations/animations';
-import PageTransition from 'components/PageTransition/PageTransition';
+// ANIMATIONS
+import { pageAnimation, slide } from 'assets/animations/animations';
 
 const Home = () => (
   <>

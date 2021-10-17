@@ -110,8 +110,8 @@ const Form = () => {
         />
         <IconsAndButton>
           <Icons>
-            <img src={instagramIcon} />
-            <img src={messengerIcon} />
+            <img src={instagramIcon} alt='Instagram Icon' />
+            <img src={messengerIcon} alt='Messenger Icon' />
           </Icons>
           <Button text='Wyślij' onClick={checkValid} />
         </IconsAndButton>

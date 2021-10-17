@@ -2,9 +2,9 @@ import React from 'react';
 // COMPONENTS
 import ViewTitle from 'components/ViewTitle/ViewTitle';
 import PriceListPackages from 'components/PriceListPackages/PriceListPackages';
+import PageTransition from 'components/PageTransition/PageTransition';
 // VECTORS
 import { homeVectosPaths } from 'data/vectorsParams';
-import PageTransition from 'components/PageTransition/PageTransition';
 
 const PriceList = () => (
   <>

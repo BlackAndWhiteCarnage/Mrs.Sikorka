@@ -1,22 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// COMPONENTS
 import ViewTitle from 'components/ViewTitle/ViewTitle';
-import { homeVectosPaths } from 'data/vectorsParams';
 import PageTransition from 'components/PageTransition/PageTransition';
+// VECTORS
+import { homeVectosPaths } from 'data/vectorsParams';
 
-const AboutMe = () => {
-  return (
-    <>
-      <ViewTitle
-        titleFirstPart='Nazywam się Ewelina Sikora, a moją największą pasją'
-        titleSecondPart='jest marketing, fotografia i media społecznościowe.'
-        vectorsData={homeVectosPaths}
-      />
-      <PageTransition />
-    </>
-  );
-};
-
-AboutMe.propTypes = {};
+const AboutMe = () => (
+  <>
+    <ViewTitle
+      titleFirstPart='Nazywam się Ewelina Sikora, a moją największą pasją'
+      titleSecondPart='jest marketing, fotografia i media społecznościowe.'
+      vectorsData={homeVectosPaths}
+    />
+    <PageTransition />
+  </>
+);
 
 export default AboutMe;
