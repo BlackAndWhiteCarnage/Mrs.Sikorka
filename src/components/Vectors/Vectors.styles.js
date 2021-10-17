@@ -1,4 +1,11 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
+
+export const Wrapper = styled(motion.div)`
+  width: 100%;
+  max-width: 100vw;
+  height: 100vh;
+`;
 
 export const Vector = styled.svg`
   position: absolute;

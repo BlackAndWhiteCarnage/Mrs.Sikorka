@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ViewTitle from 'components/ViewTitle/ViewTitle';
 import { homeVectosPaths } from 'data/vectorsParams';
-import ScrollTop from 'helpers/ScrollTop';
+import PageTransition from 'components/PageTransition/PageTransition';
 
 const AboutMe = () => {
   return (
@@ -12,7 +12,7 @@ const AboutMe = () => {
         titleSecondPart='jest marketing, fotografia i media społecznościowe.'
         vectorsData={homeVectosPaths}
       />
-      <ScrollTop />
+      <PageTransition />
     </>
   );
 };

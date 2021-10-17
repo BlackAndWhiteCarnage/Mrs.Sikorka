@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   position: absolute;
   top: 50%;
   left: 50%;
@@ -71,7 +72,7 @@ export const Text = styled.p`
   }
 `;
 
-export const ImageWrapperAbsolute = styled.div`
+export const ImageWrapperAbsolute = styled(motion.div)`
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);

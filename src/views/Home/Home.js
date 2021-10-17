@@ -10,18 +10,21 @@ import Vectors from 'components/Vectors/Vectors';
 import { homeVectosPaths } from 'data/vectorsParams';
 // STYLES
 import { Wrapper, TextWrapper, Line, Text, ImageWrapperAbsolute, ImageWrapperRelative, Image, Name } from './Home.styles';
+import { pageAnimation, slide, slider, sliderContainer } from 'assets/animations/animations';
+import PageTransition from 'components/PageTransition/PageTransition';
 
 const Home = () => (
   <>
     <Vectors vectorsData={homeVectosPaths} />
-    <Wrapper>
-      <ImageWrapperAbsolute className='firstImage'>
+    <PageTransition />
+    <Wrapper variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
+      <ImageWrapperAbsolute className='firstImage' variants={slide}>
         <ImageWrapperRelative className='firstImage'>
           <Image src={EwelinaSikoraImg} />
           <Name src={nameIcon} />
         </ImageWrapperRelative>
       </ImageWrapperAbsolute>
-      <ImageWrapperAbsolute className='secondImage'>
+      <ImageWrapperAbsolute className='secondImage' variants={slide}>
         <ImageWrapperRelative className='secondImage'>
           <Image src={CoffeAndLaptopImg} />
         </ImageWrapperRelative>

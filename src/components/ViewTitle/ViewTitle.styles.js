@@ -1,16 +1,17 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Wrapper = styled.section`
   position: relative;
   width: 100%;
   height: calc(100vh - 75px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 `;
 
-export const TitleWrapper = styled.div`
+export const TitleWrapper = styled(motion.div)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   max-width: 600px;
   text-align: center;

@@ -7,7 +7,7 @@ export const Wrapper = styled.nav`
   width: 100%;
   height: 75px;
   background: ${({ theme }) => theme.colors.white};
-  z-index: 9999;
+  z-index: 999999;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   border-top: 2px solid ${({ theme }) => theme.colors.beigeDark3};
   @media screen and (max-width: 680px) {

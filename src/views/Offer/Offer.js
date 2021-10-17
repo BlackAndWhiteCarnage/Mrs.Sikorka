@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ViewTitle from 'components/ViewTitle/ViewTitle';
 import { homeVectosPaths } from 'data/vectorsParams';
 import styled from 'styled-components';
-import ScrollTop from 'helpers/ScrollTop';
+import PageTransition from 'components/PageTransition/PageTransition';
 
 const Wrapper = styled.section`
   width: 100%;
@@ -81,8 +81,8 @@ const OfferItem = styled.div`
 const Offer = () => {
   return (
     <>
+      <PageTransition />
       <ViewTitle titleFirstPart='Co możesz ode mnie otrzymać?' titleSecondPart='Czym konkretnie się zajmuję?' vectorsData={homeVectosPaths} />
-      <ScrollTop />
       <Wrapper>
         <Header>
           Wyeksponuję <span>Twój produkt</span>, wydobywając z niego to co najlepsze. Robię zdjęcia, które na Instagramie i Facebooku dobrze się

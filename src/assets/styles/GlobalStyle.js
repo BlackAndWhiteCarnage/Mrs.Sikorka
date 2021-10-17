@@ -9,7 +9,8 @@ const GlobalStyle = createGlobalStyle`
     }
     body{
         background: ${({ theme }) => theme.colors.darkWhite};
-        color: ${({ theme }) => theme.colors.darkGrey}
+        color: ${({ theme }) => theme.colors.darkGrey};
+        overflow-x: hidden;
     }
     ::-webkit-scrollbar {
         width: 10px;
