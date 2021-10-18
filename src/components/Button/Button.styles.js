@@ -18,7 +18,6 @@ export const Wrapper = styled.button`
   text-transform: uppercase;
   margin: 5px;
   transition: 0.25s ease;
-  cursor: pointer;
   border: 2px solid ${({ theme }) => theme.colors.beigeDark3};
   @media screen and (min-width: 1250px) {
     &:hover {

@@ -1,10 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
 // STYLES
-import { Wrapper } from './Cursor.styles';
+import { Wrapper, CursorImage } from './Cursor.styles';
+import cursorIcon from 'assets/images/cursor.png';
+import cursorActiveIcon from 'assets/images/cursor-active.png';
 
 const AmazingCursor = () => {
   const ref = useRef(null);
   const [isTouchscreen, setIsTouchscreen] = useState(false);
+  const [cursorPointer, setCursorPointer] = useState(false);
 
   useEffect(() => {
     if (window.matchMedia('(pointer: coarse)').matches) {
@@ -32,8 +35,10 @@ const AmazingCursor = () => {
       item.tagName === 'A'
     ) {
       ref.current.classList.add('active');
+      setCursorPointer(true);
     } else {
       ref.current.classList.remove('active');
+      setCursorPointer(false);
     }
   };
 
@@ -44,7 +49,16 @@ const AmazingCursor = () => {
     return;
   }, []);
 
-  return <>{!isTouchscreen && <Wrapper ref={ref}></Wrapper>}</>;
+  return (
+    <>
+      {!isTouchscreen && (
+        <Wrapper ref={ref}>
+          <CursorImage src={cursorIcon} className={!cursorPointer && 'show'} />
+          <CursorImage src={cursorActiveIcon} className={cursorPointer && 'pointer'} />
+        </Wrapper>
+      )}
+    </>
+  );
 };
 
 export default AmazingCursor;

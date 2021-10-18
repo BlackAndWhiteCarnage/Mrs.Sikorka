@@ -6,12 +6,12 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Montserrat', sans-serif;
+        cursor: none !important;
     }
     body{
         background: ${({ theme }) => theme.colors.darkWhite};
         color: ${({ theme }) => theme.colors.darkGrey};
         overflow-x: hidden;
-        cursor: none;
     }
     ::-webkit-scrollbar {
         width: 10px;
