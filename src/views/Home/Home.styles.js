@@ -166,7 +166,7 @@ export const Image = styled.img`
   object-fit: cover;
 `;
 
-export const Name = styled.img`
+export const Name = styled.svg`
   position: absolute;
   left: -80px;
   top: 0;

@@ -5,21 +5,20 @@ import { useLocation } from 'react-router';
 import Hamburger from 'components/Hamburger/Hamburger';
 import HomeIcon from 'components/HomeIcon/HomeIcon';
 import NavItem from 'components/NavItem/NavItem';
-// ICONS
+// IMAGES
 import logoIcon from 'assets/icons/logo-icon.svg';
 // STYLES
 import { Wrapper, NavItemsWrapper, HomeAndHambrgerWrapper, Logo } from './NavBarItems.styles';
 
 const NavBarItems = ({ toggleModal, toggleModalHandler }) => {
   const location = useLocation().pathname;
-
   return (
     <Wrapper>
       <NavItemsWrapper>
         <NavItem to='/o_mnie' text='O Mnie' className='desktopNavItem' />
         <NavItem to='/oferta' text='Oferta' className='desktopNavItem' />
         <Logo>
-          <img src={logoIcon} alt='Mrs. Sikorka Ewelina Sikora Logo' />
+          <img src={logoIcon} />
         </Logo>
         <NavItem to='/cennik' text='Cennik' className='desktopNavItem' />
         <NavItem to='/kontakt' text='Kontakt' className='desktopNavItem' />

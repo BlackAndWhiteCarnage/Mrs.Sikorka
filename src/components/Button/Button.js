@@ -4,8 +4,8 @@ import { Wrapper } from './Button.styles';
 
 const Button = ({ text, className, onClick, icon, alt }) => {
   return (
-    <Wrapper className={className} onClick={onClick}>
-      {!icon ? text : <img src={icon} alt={alt} />}
+    <Wrapper className={className} onClick={onClick} id='active'>
+      {!icon ? text : <img src={icon} alt={alt} id='active' />}
     </Wrapper>
   );
 };

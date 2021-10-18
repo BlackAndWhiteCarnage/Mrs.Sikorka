@@ -41,7 +41,7 @@ const Form = () => {
   const messageHandler = (e) => {
     setMessageValue(e.target.value);
 
-    if (e.target.value.length >= 10) {
+    if (e.target.value.length >= 20) {
       setValidMessage(true);
     } else {
       setValidMessage(false);
@@ -107,6 +107,7 @@ const Form = () => {
           onChange={messageHandler}
           className={`${feedback === 2 && !validMessage && 'ERROR'} ${validMessage && 'VALID'}`}
           value={messageValue}
+          placeholder='Minimum 20 znaków'
         />
         <IconsAndButton>
           <Icons>

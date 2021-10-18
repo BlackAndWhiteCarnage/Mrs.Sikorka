@@ -6,9 +6,9 @@ import homeIcon from 'assets/icons/home-icon.svg';
 import { Wrapper, IconWrapper } from './HomeIcon.styles';
 
 const HomeIcon = ({ location, toggleModalHandler }) => (
-  <Wrapper className={location !== '/' && 'show'} onClick={() => toggleModalHandler(false)}>
-    <IconWrapper className={location !== '/' && 'show'} to='/' tabIndex={location === '/' ? -1 : 1}>
-      <img src={homeIcon} alt='Home Icon' />
+  <Wrapper className={location !== '/' && 'show'} onClick={() => toggleModalHandler(false)} id='active'>
+    <IconWrapper className={location !== '/' && 'show'} to='/' tabIndex={location === '/' ? -1 : 1} id='active'>
+      <img src={homeIcon} alt='Home Icon' id='active' />
     </IconWrapper>
   </Wrapper>
 );

@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
         background: ${({ theme }) => theme.colors.darkWhite};
         color: ${({ theme }) => theme.colors.darkGrey};
         overflow-x: hidden;
+        cursor: none;
     }
     ::-webkit-scrollbar {
         width: 10px;
