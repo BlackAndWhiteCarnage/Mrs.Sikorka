@@ -23,7 +23,6 @@ const GlobalStyle = createGlobalStyle`
     }
     ::-webkit-scrollbar-thumb {
         background: ${({ theme }) => theme.colors.beigeDark3};
-        border-radius: 5px;
     }
 `;
 

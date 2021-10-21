@@ -9,11 +9,14 @@ import NavItem from 'components/NavItem/NavItem';
 import logoIcon from 'assets/icons/logo-icon.svg';
 // STYLES
 import { Wrapper, NavItemsWrapper, HomeAndHambrgerWrapper, Logo } from './NavBarItems.styles';
+// ANIMATIONS
+import { navAnim } from 'assets/animations/animations';
 
 const NavBarItems = ({ toggleModal, toggleModalHandler }) => {
   const location = useLocation().pathname;
+
   return (
-    <Wrapper>
+    <Wrapper variants={navAnim} initial='hidden' animate='show'>
       <NavItemsWrapper>
         <NavItem to='/o_mnie' text='O Mnie' className='desktopNavItem' />
         <NavItem to='/oferta' text='Oferta' className='desktopNavItem' />

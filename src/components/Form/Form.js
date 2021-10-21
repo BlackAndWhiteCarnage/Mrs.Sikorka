@@ -5,6 +5,8 @@ import instagramIcon from 'assets/icons/instagram-icon.svg';
 import messengerIcon from 'assets/icons/messenger-icon.svg';
 // STYLES
 import { Wrapper, FormWrapper, Label, Input, Textarea, IconsAndButton, Icons, WaitingWrapper } from './Form.styles';
+// ANIMATIONS
+import { contentAnim } from 'assets/animations/animations';
 
 const Form = () => {
   const [emailSend, setEmailSend] = useState(false);
@@ -96,7 +98,7 @@ const Form = () => {
   }
 
   return (
-    <Wrapper>
+    <Wrapper variants={contentAnim} initial='hidden' animate='show' exit='exit'>
       <FormWrapper>
         <Label>Imię</Label>
         <Input onChange={nameHandler} className={`${feedback === 2 && !validName && 'ERROR'} ${validName && 'VALID'}`} value={nameValue} />

@@ -6,26 +6,29 @@ import cursorActiveIcon from 'assets/images/cursor-active.png';
 
 const AmazingCursor = () => {
   const ref = useRef(null);
-  const [isTouchscreen, setIsTouchscreen] = useState(false);
+  const [isTouchscreen, setIsTouchscreen] = useState(null);
   const [cursorPointer, setCursorPointer] = useState(false);
 
   useEffect(() => {
     if (window.matchMedia('(pointer: coarse)').matches) {
       setIsTouchscreen(true);
     } else {
+      window.addEventListener('mousemove', mouseMoveHandler);
+      window.addEventListener('mouseover', activeCursorHandler);
       setIsTouchscreen(false);
     }
   }, []);
 
+  console.log(isTouchscreen);
+
   const mouseMoveHandler = (e) => {
     ref.current.style.top = e.clientY + 'px';
     ref.current.style.left = e.clientX + 'px';
-
-    return;
   };
 
   const activeCursorHandler = (e) => {
     const item = e.target;
+
     if (
       item.id === 'active' ||
       item.tagName === 'INPUT' ||
@@ -41,13 +44,6 @@ const AmazingCursor = () => {
       setCursorPointer(false);
     }
   };
-
-  useEffect(() => {
-    window.addEventListener('mousemove', mouseMoveHandler);
-    window.addEventListener('mouseover', activeCursorHandler);
-
-    return;
-  }, []);
 
   return (
     <>

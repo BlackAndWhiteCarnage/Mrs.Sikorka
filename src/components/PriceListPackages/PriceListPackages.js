@@ -10,6 +10,8 @@ import { socialMediaPackages, influencerMarketingPackages, productPhotographyPac
 import alertIcon from 'assets/icons/alert-icon.svg';
 // STYLES
 import { Wrapper, PackagesWrapper, PackagesOptions, ButtonsWrapper, Packages, InfoModal } from './PriceListPackages.styles';
+// ANIMATIONS
+import { contentAnim } from 'assets/animations/animations';
 
 const PriceListPackages = () => {
   const [data, setData] = useState(socialMediaPackages);
@@ -43,41 +45,47 @@ const PriceListPackages = () => {
   };
 
   return (
-    <Wrapper>
-      <BlockScroll toggle={showInfo} />
-      <PackagesWrapper>
-        <PackagesOptions ref={ref}>
-          <p>Czego dokładnie szukasz?</p>
-          <ButtonsWrapper>
-            <Button text='Social Media' onClick={() => changeDataHandler(socialMediaPackages)} className={data === socialMediaPackages && 'active'} />
-            <Button
-              text='Fotografia Produktowa'
-              onClick={() => changeDataHandler(productPhotographyPackages)}
-              className={data === productPhotographyPackages && 'active'}
-            />
-            <Button
-              text='Influencer Marketing'
-              onClick={() => changeDataHandler(influencerMarketingPackages)}
-              className={data === influencerMarketingPackages && 'active'}
-            />
-            <Button icon={alertIcon} alt='Alert Icon' onClick={showInfoHandler} />
-            <InfoModal className={showInfo && 'show'} onClick={showInfoHandler} id='active'>
-              <div id='active'>
-                <p id='active'>Każdy pakiet możemy dowolnie zmodyfikować i dopasować do Twoich indywidualnych potrzeb.</p>
-                <p id='active'>
-                  Łącząc pakiety social media + influencer marketing + fotografia produktowa w dowolnych konfiguracjach, możesz liczyć na RABAT.
-                </p>
-              </div>
-            </InfoModal>
-          </ButtonsWrapper>
-        </PackagesOptions>
-        <Packages className={toggle && 'hide'}>
-          {data.map(({ name, services, price }) => (
-            <Package name={name} services={services} price={price} half={data.length === 2 && true} key={name} />
-          ))}
-        </Packages>
-      </PackagesWrapper>
-    </Wrapper>
+    <>
+      <Wrapper variants={contentAnim} initial='hidden' animate='show' exit='exit'>
+        <BlockScroll toggle={showInfo} />
+        <PackagesWrapper>
+          <PackagesOptions ref={ref}>
+            <p>Czego dokładnie szukasz?</p>
+            <ButtonsWrapper>
+              <Button
+                text='Social Media'
+                onClick={() => changeDataHandler(socialMediaPackages)}
+                className={data === socialMediaPackages && 'active'}
+              />
+              <Button
+                text='Fotografia Produktowa'
+                onClick={() => changeDataHandler(productPhotographyPackages)}
+                className={data === productPhotographyPackages && 'active'}
+              />
+              <Button
+                text='Influencer Marketing'
+                onClick={() => changeDataHandler(influencerMarketingPackages)}
+                className={data === influencerMarketingPackages && 'active'}
+              />
+              <Button icon={alertIcon} alt='Alert Icon' onClick={showInfoHandler} />
+            </ButtonsWrapper>
+          </PackagesOptions>
+          <Packages className={toggle && 'hide'}>
+            {data.map(({ name, services, price }) => (
+              <Package name={name} services={services} price={price} half={data.length === 2 && true} key={name} />
+            ))}
+          </Packages>
+        </PackagesWrapper>
+      </Wrapper>
+      <InfoModal className={showInfo && 'show'} onClick={showInfoHandler} id='active'>
+        <div id='active'>
+          <p id='active'>Każdy pakiet możemy dowolnie zmodyfikować i dopasować do Twoich indywidualnych potrzeb.</p>
+          <p id='active'>
+            Łącząc pakiety social media + influencer marketing + fotografia produktowa w dowolnych konfiguracjach, możesz liczyć na RABAT.
+          </p>
+        </div>
+      </InfoModal>
+    </>
   );
 };
 

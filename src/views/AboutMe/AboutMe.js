@@ -1,9 +1,9 @@
 import React from 'react';
 // COMPONENTS
 import ViewTitle from 'components/ViewTitle/ViewTitle';
+import Button from 'components/Button/Button';
 // VECTORS
 import { aboutMeVectosPaths } from 'data/vectorsParams';
-
 // IMAGES
 import img1 from 'assets/images/img1.jpg';
 import img2 from 'assets/images/img2.jpg';
@@ -14,11 +14,13 @@ import img6 from 'assets/images/img6.jpg';
 import img7 from 'assets/images/img7.jpg';
 import img8 from 'assets/images/img8.jpg';
 import img9 from 'assets/images/img9.jpg';
-import Button from 'components/Button/Button';
+// ANIMATIONS
+import { contentAnim } from 'assets/animations/animations';
 
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const Wrapper = styled.div`
+const Wrapper = styled(motion.section)`
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -40,6 +42,10 @@ const Header = styled.h2`
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 20px;
+  text-align: center;
+  @media screen and (max-width: 620px) {
+    width: 90%;
+  }
 `;
 
 const Content = styled.article`
@@ -52,6 +58,9 @@ const Content = styled.article`
   flex-direction: column;
   justify-content: space-around;
   font-size: ${({ theme }) => theme.fontSize.l};
+  @media screen and (max-width: 620px) {
+    width: 90%;
+  }
   p {
     position: relative;
     width: 100%;
@@ -75,8 +84,12 @@ const ButtonsWrapper = styled.div`
   width: 100%;
   max-width: 600px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 620px) {
+    width: 90%;
+  }
 `;
 
 export const ImagesWrapper = styled.section`
@@ -101,6 +114,9 @@ export const ImagesWrapper = styled.section`
     @media screen and (max-width: 1200px) {
       width: 45%;
     }
+    @media screen and (max-width: 620px) {
+      width: 100%;
+    }
   }
 `;
 
@@ -111,7 +127,7 @@ const AboutMe = () => (
       titleSecondPart='jest marketing, fotografia i media społecznościowe.'
       vectorsData={aboutMeVectosPaths}
     />
-    <Wrapper>
+    <Wrapper variants={contentAnim} initial='hidden' animate='show' exit='exit'>
       <Header>Potrzebujesz kogoś kto...</Header>
       <Content>
         <p>

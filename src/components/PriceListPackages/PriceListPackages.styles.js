@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const Wrapper = styled.section`
+export const Wrapper = styled(motion.section)`
   position: relative;
   width: 100%;
   height: 100%;
@@ -266,6 +267,8 @@ export const InfoModal = styled.div`
     p {
       width: 100%;
       height: 50%;
+      display: flex;
+      align-items: center;
     }
     @media screen and (max-width: 860px) {
       height: 450px;
