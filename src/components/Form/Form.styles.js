@@ -1,18 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-import { motion } from 'framer-motion';
-
-export const Wrapper = styled(motion.section)`
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 0;
-  background: ${({ theme }) => theme.colors.white};
-  border-top: 2px solid ${({ theme }) => theme.colors.beigeDark3};
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  margin-top: calc(100vh - 75px);
-`;
 
 export const FormWrapper = styled.form`
   position: relative;

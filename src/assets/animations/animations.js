@@ -88,7 +88,7 @@ export const contentAnim = {
   },
   exit: {
     opacity: 0,
-    transform: 'translateY(-50px)',
+    transform: 'translateY(100px)',
     transition: {
       delay: 0.25,
       duration: 1,

@@ -1,19 +1,18 @@
 import React from 'react';
 // COMPONENTS
 import ViewTitle from 'components/ViewTitle/ViewTitle';
+import ContentWrapper from 'hoc/ContentWrapper';
 // DATA
 import { offersData } from 'data/offersData';
 // VECTORS
 import { offerVectosPaths } from 'data/vectorsParams';
 // STYLES
-import { Wrapper, Offers, OfferWrapper, Title, OfferItem } from './Offer.styles';
-// ANIMATIONS
-import { contentAnim } from 'assets/animations/animations';
+import { Offers, OfferWrapper, Title, OfferItem } from './Offer.styles';
 
 const Offer = () => (
   <>
     <ViewTitle titleFirstPart='Co możesz ode mnie otrzymać?' titleSecondPart='Czym konkretnie się zajmuję?' vectorsData={offerVectosPaths} />
-    <Wrapper variants={contentAnim} initial='hidden' animate='show' exit='exit'>
+    <ContentWrapper className='column'>
       <Offers>
         {offersData.map(({ title, offersList }) => (
           <OfferWrapper key={title}>
@@ -24,7 +23,7 @@ const Offer = () => (
           </OfferWrapper>
         ))}
       </Offers>
-    </Wrapper>
+    </ContentWrapper>
   </>
 );
 

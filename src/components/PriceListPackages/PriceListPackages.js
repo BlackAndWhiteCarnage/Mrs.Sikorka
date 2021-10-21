@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 // COMPONENTS
 import Button from 'components/Button/Button';
 import Package from 'components/Package/Package';
+import ContentWrapper from 'hoc/ContentWrapper';
 // HELPERS
 import BlockScroll from 'helpers/BlockScroll';
 // PACKAGES DATA
@@ -9,9 +10,7 @@ import { socialMediaPackages, influencerMarketingPackages, productPhotographyPac
 // ICONS
 import alertIcon from 'assets/icons/alert-icon.svg';
 // STYLES
-import { Wrapper, PackagesWrapper, PackagesOptions, ButtonsWrapper, Packages, InfoModal } from './PriceListPackages.styles';
-// ANIMATIONS
-import { contentAnim } from 'assets/animations/animations';
+import { PackagesWrapper, PackagesOptions, ButtonsWrapper, Packages, InfoModal } from './PriceListPackages.styles';
 
 const PriceListPackages = () => {
   const [data, setData] = useState(socialMediaPackages);
@@ -46,7 +45,7 @@ const PriceListPackages = () => {
 
   return (
     <>
-      <Wrapper variants={contentAnim} initial='hidden' animate='show' exit='exit'>
+      <ContentWrapper>
         <BlockScroll toggle={showInfo} />
         <PackagesWrapper>
           <PackagesOptions ref={ref}>
@@ -76,7 +75,7 @@ const PriceListPackages = () => {
             ))}
           </Packages>
         </PackagesWrapper>
-      </Wrapper>
+      </ContentWrapper>
       <InfoModal className={showInfo && 'show'} onClick={showInfoHandler} id='active'>
         <div id='active'>
           <p id='active'>Każdy pakiet możemy dowolnie zmodyfikować i dopasować do Twoich indywidualnych potrzeb.</p>
