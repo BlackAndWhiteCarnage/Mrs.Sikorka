@@ -30,7 +30,7 @@ const Home = () => {
                 stroke-linecap='round'
                 initial={{ pathLength: 0, pathOffset: 1 }}
                 animate={{ pathLength: 1, pathOffset: 0 }}
-                transition={{ duration: 2, delay: 2 }}
+                transition={{ duration: 2, delay: 0.5 }}
               />
             </Name>
           </ImageWrapperRelative>

@@ -61,10 +61,12 @@ const PriceListPackages = () => {
               className={data === influencerMarketingPackages && 'active'}
             />
             <Button icon={alertIcon} alt='Alert Icon' onClick={showInfoHandler} />
-            <InfoModal className={showInfo && 'show'} onClick={showInfoHandler}>
-              <div>
-                <p>Każdy pakiet możemy dowolnie zmodyfikować i dopasować do Twoich indywidualnych potrzeb.</p>
-                <p>Łącząc pakiety social media + influencer marketing + fotografia produktowa w dowolnych konfiguracjach, możesz liczyć na RABAT.</p>
+            <InfoModal className={showInfo && 'show'} onClick={showInfoHandler} id='active'>
+              <div id='active'>
+                <p id='active'>Każdy pakiet możemy dowolnie zmodyfikować i dopasować do Twoich indywidualnych potrzeb.</p>
+                <p id='active'>
+                  Łącząc pakiety social media + influencer marketing + fotografia produktowa w dowolnych konfiguracjach, możesz liczyć na RABAT.
+                </p>
               </div>
             </InfoModal>
           </ButtonsWrapper>

@@ -22,7 +22,6 @@ export const Wrapper = styled(NavLink).attrs({ activeClassName: 'active-link' })
     transition: 0.35s ease;
     padding: 20px 30px;
     white-space: nowrap;
-    border-radius: 10px;
     border: 2px solid ${({ theme }) => theme.colors.white};
     &:hover,
     &:focus,

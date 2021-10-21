@@ -14,7 +14,6 @@ export const Wrapper = styled.button`
   color: ${({ theme }) => theme.colors.darkGrey};
   padding: 20px;
   font-size: ${({ theme }) => theme.fontSize.m};
-  border-radius: 10px;
   text-transform: uppercase;
   margin: 5px;
   transition: 0.25s ease;

@@ -6,7 +6,11 @@ export const Wrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 150px 0;
+  padding: 100px 0;
+  background: ${({ theme }) => theme.colors.white};
+  border-top: 2px solid ${({ theme }) => theme.colors.beigeDark3};
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  margin-top: calc(100vh - 75px);
 `;
 
 export const FormWrapper = styled.form`
@@ -64,7 +68,6 @@ export const Textarea = styled.textarea`
   padding: 10px;
   outline: none;
   font-size: ${({ theme }) => theme.fontSize.m};
-  border-radius: 0 0 15px 0;
   transition: 0.25s ease-out;
   &.ERROR {
     background: #ffd6d6;

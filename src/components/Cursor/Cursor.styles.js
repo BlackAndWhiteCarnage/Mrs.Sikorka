@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
 
 export const CursorImage = styled.img`
   position: absolute;
-  width: 30px;
+  width: 20px;
   z-index: 999999;
   transform: scale(0);
   transition: 0.3s ease;

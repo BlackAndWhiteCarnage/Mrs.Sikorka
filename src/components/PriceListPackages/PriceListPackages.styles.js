@@ -9,7 +9,11 @@ export const Wrapper = styled.section`
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
-  padding: 150px 0 50px 0;
+  padding: 100px 0;
+  background: ${({ theme }) => theme.colors.white};
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-top: 2px solid ${({ theme }) => theme.colors.beigeDark3};
+  margin-top: calc(100vh - 75px);
 `;
 
 export const PackagesWrapper = styled.div`
@@ -34,9 +38,9 @@ export const PackagesOptions = styled.div`
   justify-content: space-between;
   background: ${({ theme }) => theme.colors.white};
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  border-radius: 10px;
+  padding: 50px 30px;
   margin-bottom: 40px;
+  border: 2px solid ${({ theme }) => theme.colors.beigeDark3};
   @media screen and (max-width: 1250px) {
     flex-direction: column;
     min-height: 250px;
@@ -86,7 +90,6 @@ export const ButtonsWrapper = styled.div`
   @media screen and (max-width: 860px) {
     background: ${({ theme }) => theme.colors.white};
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
     padding: 20px;
     align-items: flex-start;
   }
@@ -116,7 +119,6 @@ export const PackageListWrapper = styled.div`
   padding: 50px 40px;
   background: white;
   font-size: ${({ theme }) => theme.fontSize.l};
-  border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   border: 2px solid ${({ theme }) => theme.colors.beigeDark2};
   @media screen and (min-width: 860px) {
@@ -202,7 +204,6 @@ export const PackageListItem = styled.li`
     height: 2px;
     background: ${({ theme }) => theme.colors.beigeDark};
     bottom: -20px;
-    border-radius: 10px;
     @media screen and (max-width: 1600px) {
       bottom: -10px;
     }
@@ -250,7 +251,6 @@ export const InfoModal = styled.div`
     max-width: 800px;
     background: ${({ theme }) => theme.colors.white};
     font-size: ${({ theme }) => theme.fontSize.l};
-    border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     height: 300px;
     display: flex;

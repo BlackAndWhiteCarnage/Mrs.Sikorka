@@ -7,8 +7,7 @@ export const pageAnimation = {
     opacity: 1,
     top: '50%',
     transition: {
-      duration: 1,
-      delay: 0.5,
+      duration: 0.5,
       when: 'beforeChildren',
     },
   },
@@ -29,7 +28,7 @@ export const slide = {
   show: {
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 0.5,
     },
   },
   exit: {
@@ -47,14 +46,14 @@ export const fade = {
   show: {
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 0.5,
     },
   },
   exit: {
     opacity: 0,
     transition: {
-      delay: 0.5,
-      duration: 1,
+      delay: 0.25,
+      duration: 0.5,
     },
   },
 };

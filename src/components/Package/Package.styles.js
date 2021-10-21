@@ -74,7 +74,6 @@ export const ButtonsWrapper = styled.div`
   @media screen and (max-width: 860px) {
     background: ${({ theme }) => theme.colors.white};
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
     padding: 20px;
     align-items: flex-start;
   }
@@ -86,7 +85,6 @@ export const Wrapper = styled.div`
   padding: 50px 40px;
   background: white;
   font-size: ${({ theme }) => theme.fontSize.l};
-  border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   border: 2px solid ${({ theme }) => theme.colors.beigeDark2};
   @media screen and (min-width: 860px) {
@@ -172,7 +170,6 @@ export const PackageListItem = styled.li`
     height: 2px;
     background: ${({ theme }) => theme.colors.beigeDark};
     bottom: -20px;
-    border-radius: 10px;
     @media screen and (max-width: 1600px) {
       bottom: -10px;
     }

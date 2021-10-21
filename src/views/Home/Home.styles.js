@@ -31,7 +31,6 @@ export const TextWrapper = styled.div`
   width: 220px;
   height: 300px;
   border: 2px solid ${({ theme }) => theme.colors.beigeDark3};
-  border-radius: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -55,7 +54,6 @@ export const Line = styled.div`
   width: 30%;
   height: 2px;
   background: ${({ theme }) => theme.colors.beigeDark3};
-  border-radius: 10px;
 `;
 
 export const Text = styled.p`
@@ -77,7 +75,6 @@ export const ImageWrapperAbsolute = styled(motion.div)`
   top: 50%;
   transform: translate(0, -50%);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   &.firstImage {
     width: 350px;
     height: 500px;
@@ -131,8 +128,6 @@ export const ImageWrapperRelative = styled.div`
     width: 100%;
     height: 100%;
     border: 2px solid ${({ theme }) => theme.colors.beigeDark3};
-    /* border-radius: ${({ theme }) => theme.borderRadius.radius}; */
-    border-radius: 10px;
   }
   &.firstImage {
     &::before {
@@ -161,8 +156,6 @@ export const ImageWrapperRelative = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-  /* border-radius: ${({ theme }) => theme.borderRadius.radius}; */
-  border-radius: 10px;
   object-fit: cover;
 `;
 

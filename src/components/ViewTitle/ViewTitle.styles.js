@@ -5,6 +5,9 @@ export const Wrapper = styled.section`
   position: relative;
   width: 100%;
   height: calc(100vh - 75px);
+  position: fixed;
+  top: 0;
+  z-index: -1;
 `;
 
 export const TitleWrapper = styled(motion.div)`
@@ -22,7 +25,6 @@ export const TitleWrapper = styled(motion.div)`
   h2 {
     background: ${({ theme }) => theme.colors.white};
     padding: 50px;
-    border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
     letter-spacing: 2px;
