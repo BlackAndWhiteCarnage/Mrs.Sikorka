@@ -1,4 +1,6 @@
 import React from 'react';
+// HELPERS
+import Keywords from 'helpers/Keywords';
 // IMAGES
 import EwelinaSikoraImg from 'assets/images/EwelinaSikoraImage.jpg';
 import CoffeAndLaptopImg from 'assets/images/CoffeAndLaptopImage.jpg';
@@ -15,6 +17,7 @@ import { nameVectosPaths } from 'data/vectorsParams';
 
 const Home = () => (
   <>
+    <Keywords text='social media, obsługa social mediów, obsługa Facebook, obsługa Instagram, agencja reklamowa' />
     <Vectors vectorsData={homeVectosPaths} />
     <Wrapper variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
       <ImageWrapperAbsolute className='firstImage' variants={slide}>

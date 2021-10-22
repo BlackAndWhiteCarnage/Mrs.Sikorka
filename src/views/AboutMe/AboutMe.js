@@ -3,6 +3,8 @@ import React from 'react';
 import ViewTitle from 'components/ViewTitle/ViewTitle';
 import Button from 'components/Button/Button';
 import ContentWrapper from 'hoc/ContentWrapper';
+// HELPERS
+import Keywords from 'helpers/Keywords';
 // VECTORS
 import { aboutMeVectosPaths } from 'data/vectorsParams';
 // IMAGES
@@ -20,6 +22,7 @@ import { Header, Content, ButtonsWrapper, ImagesWrapper } from './AboutMe.styles
 
 const AboutMe = () => (
   <>
+    <Keywords text='agencja marketingowa, prowadzenie social mediów, fotografia produktowa' />
     <ViewTitle
       titleFirstPart='Nazywam się Ewelina Sikora, a moje największe pasje'
       titleSecondPart='to marketing, fotografia i media społecznościowe.'
