@@ -36,8 +36,11 @@ const AboutMe = () => (
         </p>
       </Content>
       <ButtonsWrapper>
-        <Button text='Sprawdź Ofertę' />
-        <Button text='Sprawdź portfolio' />
+        <Button text='Sprawdź Ofertę' linkTo='/oferta' />
+        <Button
+          text='Sprawdź portfolio'
+          href='https://www.canva.com/design/DAEkQWDjXGg/4O90f5iUVnHQS_HUIWnLbg/view?utm_content=DAEkQWDjXGg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
+        />
       </ButtonsWrapper>
       <ImagesWrapper>
         <img src={img1} />

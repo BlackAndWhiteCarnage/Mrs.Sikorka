@@ -11,21 +11,58 @@ export const Wrapper = styled.button`
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  color: ${({ theme }) => theme.colors.darkGrey};
-  padding: 20px;
-  font-size: ${({ theme }) => theme.fontSize.m};
   text-transform: uppercase;
   margin: 5px;
   transition: 0.25s ease;
   border: 2px solid ${({ theme }) => theme.colors.beigeDark3};
+  a,
+  p,
+  img {
+    font-size: ${({ theme }) => theme.fontSize.m};
+    width: 100%;
+    padding: 20px;
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.darkGrey};
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 10%;
+    transition: 0.5s 0.25s ease;
+    z-index: -1;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    z-index: -1;
+    transition: 0.25s ease;
+  }
   @media screen and (min-width: 1250px) {
     &:hover {
-      background: ${({ theme }) => theme.colors.beigeDark};
+      transition: 0.5s 0.25s ease;
+      color: ${({ theme }) => theme.colors.white};
+      &::before {
+        transition: 0.25s ease;
+        width: 100%;
+        background: ${({ theme }) => theme.colors.beigeDark2};
+      }
+      &::after {
+        transition: 0.25s 0.25s ease;
+        width: 100%;
+        height: 100%;
+        background: ${({ theme }) => theme.colors.beigeDark3};
+      }
     }
   }
   &.active {
     pointer-events: none;
-    background: ${({ theme }) => theme.colors.beigeDark};
+    background: ${({ theme }) => theme.colors.beigeDark3};
+    color: ${({ theme }) => theme.colors.white};
   }
   @media screen and (max-width: 1250px) {
     font-size: ${({ theme }) => theme.fontSize.l};

@@ -11,6 +11,7 @@ export const Wrapper = styled(NavLink).attrs({ activeClassName: 'active-link' })
   list-style: none;
   color: ${({ theme }) => theme.colors.darkGrey};
   letter-spacing: 2px;
+  z-index: 1;
   &.desktopNavItem {
     position: relative;
     width: 130px;
@@ -23,11 +24,42 @@ export const Wrapper = styled(NavLink).attrs({ activeClassName: 'active-link' })
     padding: 20px 30px;
     white-space: nowrap;
     border: 2px solid ${({ theme }) => theme.colors.white};
-    &:hover,
-    &:focus,
-    &.active-link {
-      border: 2px solid ${({ theme }) => theme.colors.beigeDark3};
-      background: ${({ theme }) => theme.colors.beigeDark};
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 0%;
+      height: 10%;
+      transition: 0.5s 0.25s ease;
+      z-index: -1;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 5%;
+      z-index: -1;
+      transition: 0.25s ease;
+    }
+    @media screen and (min-width: 1250px) {
+      &:hover,
+      &:focus,
+      &.active-link {
+        transition: 0.5s 0.25s ease;
+        color: ${({ theme }) => theme.colors.white};
+        &::before {
+          transition: 0.25s ease;
+          width: 100%;
+          background: ${({ theme }) => theme.colors.beigeDark2};
+        }
+        &::after {
+          transition: 0.25s 0.25s ease;
+          width: 100%;
+          height: 100%;
+          background: ${({ theme }) => theme.colors.beigeDark3};
+        }
+      }
     }
     @media screen and (max-width: 1200px) {
       display: none;

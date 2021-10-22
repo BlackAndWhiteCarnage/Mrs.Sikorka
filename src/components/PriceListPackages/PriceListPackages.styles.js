@@ -25,6 +25,7 @@ export const PackagesOptions = styled.div`
   padding: 50px 30px;
   margin-bottom: 40px;
   border: 2px solid ${({ theme }) => theme.colors.beigeDark3};
+  z-index: 1;
   @media screen and (max-width: 1250px) {
     flex-direction: column;
     min-height: 250px;
@@ -40,7 +41,7 @@ export const PackagesOptions = styled.div`
     min-height: 300px;
     border: none;
   }
-  p {
+  span {
     width: auto;
     height: 100%;
     display: flex;
