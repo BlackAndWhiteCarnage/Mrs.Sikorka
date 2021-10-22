@@ -78,7 +78,6 @@ export const Logo = styled.div`
     background: ${({ theme }) => theme.colors.beigeDark3};
     left: 0;
     bottom: 0;
-    border-radius: ${({ theme }) => theme.borderRadius.radius};
   }
   @media screen and (max-width: 1200px) {
     &::before {

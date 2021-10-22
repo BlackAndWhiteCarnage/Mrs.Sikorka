@@ -4,7 +4,7 @@ export const socialMediaPackages = [
     services: [
       'Stworzenie strategii komunikacji dla Twojej marki',
       'Pozyskanie i obróbka materiałów graficznych oraz przygotowanie angażujących treści',
-      'Publikacja materiałów na Twoich profilach',
+      'Przygotowanie harmonogramu postów i relacji FB + IG (3 posty + 3 relacje tygodniowo)',
     ],
     price: '800',
   },
@@ -13,9 +13,9 @@ export const socialMediaPackages = [
     services: [
       'Stworzenie strategii komunikacji dla Twojej marki',
       'Pozyskanie i obróbka materiałów graficznych oraz przygotowanie angażujących treści',
-      'Publikacja materiałów na Twoich profilach',
-      'Moderacja komentarzy i wiadomośc',
       'Przygotowanie harmonogramu postów i relacji FB + IG (3 posty + 3 relacje tygodniowo)',
+      'Publikacja materiałów na Twoich profilach',
+      'Moderacja komentarzy i wiadomości',
     ],
     price: '1000',
   },
@@ -24,9 +24,9 @@ export const socialMediaPackages = [
     services: [
       'Stworzenie strategii komunikacji dla Twojej marki',
       'Pozyskanie i obróbka materiałów graficznych oraz przygotowanie angażujących treści',
+      'Przygotowanie harmonogramu postów i relacji FB + IG (4 posty + 4 relacje tygodniowo)',
       'Publikacja materiałów na Twoich profilach',
-      'Moderacja komentarzy i wiadomośc',
-      'Przygotowanie harmonogramu postów i relacji FB + IG (3 posty + 3 relacje tygodniowo)',
+      'Moderacja komentarzy i wiadomości',
       'Zarządzanie płatnymi kampaniami reklamowymi Facebook',
       'Organizacja akcji dodatkowych (rozdania, konkursy)',
       'Asystowanie i wsparcie w innych tematach marketingowych dotyczących Twojej marki',

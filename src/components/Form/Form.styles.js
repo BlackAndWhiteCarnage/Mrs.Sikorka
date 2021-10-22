@@ -80,11 +80,20 @@ export const IconsAndButton = styled.div`
 `;
 
 export const Icons = styled.div`
-  width: 100px;
-  height: 100%;
+  width: 120px;
+  height: calc(100% - 10px);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  a {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s ease;
+  }
 `;
 
 const waitingAnim = keyframes`

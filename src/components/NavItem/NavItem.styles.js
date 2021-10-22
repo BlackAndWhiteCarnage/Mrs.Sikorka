@@ -82,7 +82,7 @@ export const Wrapper = styled(NavLink).attrs({ activeClassName: 'active-link' })
       transition: 0.5s ease-in-out;
       &.show {
         top: 0%;
-        transition: 1s 0.1s ease-in-out;
+        transition: 0.5s 0.1s ease-in-out;
       }
     }
     &:nth-child(2) {
@@ -91,7 +91,7 @@ export const Wrapper = styled(NavLink).attrs({ activeClassName: 'active-link' })
       transition: 0.5s ease-in-out;
       &.show {
         top: 25%;
-        transition: 1s 0.2s ease-in-out;
+        transition: 0.5s 0.2s ease-in-out;
       }
     }
     &:nth-child(3) {
@@ -100,7 +100,7 @@ export const Wrapper = styled(NavLink).attrs({ activeClassName: 'active-link' })
       transition: 0.5s ease-in-out;
       &.show {
         top: 50%;
-        transition: 1s 0.3s ease-in-out;
+        transition: 0.5s 0.3s ease-in-out;
       }
     }
     &:nth-child(4) {
@@ -109,7 +109,7 @@ export const Wrapper = styled(NavLink).attrs({ activeClassName: 'active-link' })
       transition: 0.5s ease-in-out;
       &.show {
         top: 75%;
-        transition: 1s 0.4s ease-in-out;
+        transition: 0.5s 0.4s ease-in-out;
       }
     }
     &.active-link {

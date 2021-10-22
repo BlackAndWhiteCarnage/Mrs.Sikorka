@@ -72,6 +72,7 @@ export const ImagesWrapper = styled.section`
   }
   img {
     width: 48%;
+    height: auto;
     margin-bottom: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     &:last-child {

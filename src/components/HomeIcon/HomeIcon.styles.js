@@ -26,6 +26,7 @@ export const Wrapper = styled.div`
     transform: translate(0, 50px);
     img {
       height: 100%;
+      width: auto;
       @media screen and (max-width: 680px) {
         height: 85%;
       }
@@ -57,7 +58,6 @@ export const IconWrapper = styled(Link)`
       width: 0%;
       bottom: 0px;
       background: ${({ theme }) => theme.colors.beigeDark3};
-      border-radius: ${({ theme }) => theme.borderRadius.radius};
     }
     &::before {
       transition: 0.5s 0.5s ease;

@@ -21,7 +21,7 @@ const NavBarItems = ({ toggleModal, toggleModalHandler }) => {
         <NavItem to='/o_mnie' text='O Mnie' className='desktopNavItem' />
         <NavItem to='/oferta' text='Oferta' className='desktopNavItem' />
         <Logo>
-          <img src={logoIcon} />
+          <img src={logoIcon} alt='Ewelina Sikora Logo' />
         </Logo>
         <NavItem to='/cennik' text='Cennik' className='desktopNavItem' />
         <NavItem to='/kontakt' text='Kontakt' className='desktopNavItem' />

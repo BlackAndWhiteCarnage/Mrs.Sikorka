@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 const Button = ({ text, className, onClick, icon, alt, href, linkTo }) => {
   const renderSpecyficTag = () => {
     if (text && !href && !linkTo) {
-      return <p>{text}</p>;
+      return <p id='active'>{text}</p>;
     } else if (icon) {
       return <img src={icon} alt={alt} id='active' />;
     } else if (href) {
       return (
-        <a href={href} target='_blank'>
+        <a href={href} target='_blank' id='active' rel='noreferrer'>
           {text}
         </a>
       );
@@ -29,7 +29,7 @@ const Button = ({ text, className, onClick, icon, alt, href, linkTo }) => {
 
 Button.propTypes = {
   text: PropTypes.string,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   icon: PropTypes.node,
   alt: PropTypes.string,
   href: PropTypes.string,

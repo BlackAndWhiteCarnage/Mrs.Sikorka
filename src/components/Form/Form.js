@@ -100,12 +100,18 @@ const Form = () => {
   return (
     <ContentWrapper>
       <FormWrapper>
-        <Label>Imię</Label>
-        <Input onChange={nameHandler} className={`${feedback === 2 && !validName && 'ERROR'} ${validName && 'VALID'}`} value={nameValue} />
-        <Label>Adres e-mail</Label>
-        <Input onChange={emailHandler} className={`${feedback === 2 && !validEmail && 'ERROR'} ${validEmail && 'VALID'}`} value={emailValue} />
-        <Label>Wiadomość</Label>
+        <Label htmlFor='name'>Imię</Label>
+        <Input id='name' onChange={nameHandler} className={`${feedback === 2 && !validName && 'ERROR'} ${validName && 'VALID'}`} value={nameValue} />
+        <Label htmlFor='email'>Adres e-mail</Label>
+        <Input
+          id='email'
+          onChange={emailHandler}
+          className={`${feedback === 2 && !validEmail && 'ERROR'} ${validEmail && 'VALID'}`}
+          value={emailValue}
+        />
+        <Label htmlFor='message'>Wiadomość</Label>
         <Textarea
+          id='message'
           onChange={messageHandler}
           className={`${feedback === 2 && !validMessage && 'ERROR'} ${validMessage && 'VALID'}`}
           value={messageValue}
@@ -113,8 +119,12 @@ const Form = () => {
         />
         <IconsAndButton>
           <Icons>
-            <img src={instagramIcon} alt='Instagram Icon' />
-            <img src={messengerIcon} alt='Messenger Icon' />
+            <a href='https://www.instagram.com/mrs.sikorka/' target='_blank' rel='noreferrer'>
+              <img src={instagramIcon} alt='Instagram Icon' id='active' />
+            </a>
+            <a href='http://m.me/ewelina.hiller/' target='_blank' rel='noreferrer'>
+              <img src={messengerIcon} alt='Messenger Icon' id='active' />
+            </a>
           </Icons>
           <Button text='Wyślij' onClick={checkValid} />
         </IconsAndButton>

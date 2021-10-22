@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
+// IMAGES
+import cursorIcon from 'assets/images/cursor/cursor.png';
+import cursorActiveIcon from 'assets/images/cursor/cursor-active.png';
 // STYLES
 import { Wrapper, CursorImage } from './Cursor.styles';
-import cursorIcon from 'assets/images/cursor.png';
-import cursorActiveIcon from 'assets/images/cursor-active.png';
 
 const AmazingCursor = () => {
   const ref = useRef(null);
@@ -18,8 +19,6 @@ const AmazingCursor = () => {
       setIsTouchscreen(false);
     }
   }, []);
-
-  console.log(isTouchscreen);
 
   const mouseMoveHandler = (e) => {
     ref.current.style.top = e.clientY + 'px';
@@ -49,8 +48,8 @@ const AmazingCursor = () => {
     <>
       {!isTouchscreen && (
         <Wrapper ref={ref}>
-          <CursorImage src={cursorIcon} className={!cursorPointer && 'show'} />
-          <CursorImage src={cursorActiveIcon} className={cursorPointer && 'pointer'} />
+          <CursorImage src={cursorIcon} className={!cursorPointer && 'show'} alt='' />
+          <CursorImage src={cursorActiveIcon} className={cursorPointer && 'pointer'} alt='' />
         </Wrapper>
       )}
     </>

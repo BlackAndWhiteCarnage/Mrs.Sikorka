@@ -29,7 +29,6 @@ export const Line = styled.div`
   &.top {
     div {
       height: 100%;
-      border-radius: ${({ theme }) => theme.borderRadius.radius};
     }
     div:first-child {
       background: ${({ theme }) => theme.colors.darkGrey};
@@ -57,7 +56,6 @@ export const Line = styled.div`
   &.mid {
     div {
       height: 100%;
-      border-radius: ${({ theme }) => theme.borderRadius.radius};
     }
     div:first-child {
       background: ${({ theme }) => theme.colors.beigeDark3};
@@ -85,7 +83,6 @@ export const Line = styled.div`
   &.bot {
     div {
       height: 100%;
-      border-radius: ${({ theme }) => theme.borderRadius.radius};
     }
     div:first-child {
       background: ${({ theme }) => theme.colors.darkGrey};
