@@ -80,7 +80,7 @@ export const ButtonsWrapper = styled.div`
   }
 `;
 
-export const Packages = styled.div`
+export const Packages = styled.main`
   position: relative;
   width: 100%;
   min-height: 1000px;

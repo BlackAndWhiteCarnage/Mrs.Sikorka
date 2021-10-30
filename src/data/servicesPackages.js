@@ -6,7 +6,7 @@ export const socialMediaPackages = [
       'Pozyskanie i obróbka materiałów graficznych oraz przygotowanie angażujących treści',
       'Przygotowanie harmonogramu postów i relacji FB + IG (3 posty + 3 relacje tygodniowo)',
     ],
-    price: '800',
+    price: 'Od 800',
   },
   {
     name: 'midi',
@@ -17,7 +17,7 @@ export const socialMediaPackages = [
       'Publikacja materiałów na Twoich profilach',
       'Moderacja komentarzy i wiadomości',
     ],
-    price: '1000',
+    price: 'Od 1000',
   },
   {
     name: 'maxi',
@@ -52,16 +52,16 @@ export const productPhotographyPackages = [
   {
     name: 'mini',
     services: ['Przygotowanie moodboardu', '10 zdjęć', 'Obróbka graficzna', 'Przekazanie praw autorskich'],
-    price: '500',
+    price: 'Od 500',
   },
   {
     name: 'midi',
     services: ['Przygotowanie moodboardu', '15 zdjęć', 'Obróbka graficzna', 'Przekazanie praw autorskich'],
-    price: '700',
+    price: 'Od 700',
   },
   {
     name: 'maxi',
     services: ['Przygotowanie moodboardu', '25 zdjęć', 'Obróbka graficzna', 'Przekazanie praw autorskich'],
-    price: '1100',
+    price: 'Od 1100',
   },
 ];

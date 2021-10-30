@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Offers = styled.div`
+export const Offers = styled.article`
   width: 100%;
   max-width: 600px;
   height: 100%;

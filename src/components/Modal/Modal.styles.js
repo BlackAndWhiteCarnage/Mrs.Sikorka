@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.nav`
   display: block;
   position: fixed;
   width: 100%;

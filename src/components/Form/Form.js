@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from 'emailjs-com';
 // COMPONENTS
 import ContentWrapper from 'hoc/ContentWrapper';
 import Button from 'components/Button/Button';
@@ -18,6 +19,8 @@ const Form = () => {
   const [emailValue, setEmailValue] = useState('');
   const [messageValue, setMessageValue] = useState('');
   const [waiting, setWaiting] = useState(false);
+
+  const form = useRef();
 
   const nameHandler = (e) => {
     setNameValue(e.target.value);
@@ -51,12 +54,9 @@ const Form = () => {
   };
 
   const checkValid = (e) => {
-    e.preventDefault();
-
     if (validEmail && validMessage && validName) {
       setFeedback(1);
       sendEmail(e);
-      return;
     } else {
       setFeedback(2);
     }
@@ -71,40 +71,42 @@ const Form = () => {
 
     if (validEmail && validMessage && validName) {
       setWaiting(true);
-      setTimeout(() => {
-        setNameValue('');
-        setEmailValue('');
-        setMessageValue('');
-        setEmailSend(true);
-        setFeedback(5);
-        setValidEmail(false);
-        setValidName(false);
-        setValidMessage(false);
-      }, 1500);
-      setTimeout(() => {
-        // setEmailSend(false);
-        setFeedback(0);
-      }, 4000);
-      // emailjs.sendForm('service_pkn9ez9', 'template_btr6t4a', e.target, 'user_wfAnEXgFR6wa0u7anAPJf').then(
-      //   (result) => {
-      //     console.log(result.text);
-      //     setEmailSend(true);
-      //   },
-      //   (error) => {
-      //     console.log(error.text);
-      //   }
-      // );
+      emailjs
+        .sendForm(`${process.env.REACT_APP_SERVICE_ID}`, `${process.env.REACT_APP_TEMPLATE_ID}`, form.current, `${process.env.REACT_APP_USER_ID}`)
+        .then(
+          (result) => {
+            console.log(result.text);
+            setEmailSend(true);
+            setNameValue('');
+            setEmailValue('');
+            setMessageValue('');
+            setFeedback(0);
+            setValidEmail(false);
+            setValidName(false);
+            setValidMessage(false);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
     }
   }
 
   return (
     <ContentWrapper>
-      <FormWrapper>
+      <FormWrapper onSubmit={sendEmail} ref={form}>
         <Label htmlFor='name'>Imię</Label>
-        <Input id='name' onChange={nameHandler} className={`${feedback === 2 && !validName && 'ERROR'} ${validName && 'VALID'}`} value={nameValue} />
+        <Input
+          id='name'
+          name='name'
+          onChange={nameHandler}
+          className={`${feedback === 2 && !validName && 'ERROR'} ${validName && 'VALID'}`}
+          value={nameValue}
+        />
         <Label htmlFor='email'>Adres e-mail</Label>
         <Input
           id='email'
+          name='email'
           onChange={emailHandler}
           className={`${feedback === 2 && !validEmail && 'ERROR'} ${validEmail && 'VALID'}`}
           value={emailValue}
@@ -112,6 +114,7 @@ const Form = () => {
         <Label htmlFor='message'>Wiadomość</Label>
         <Textarea
           id='message'
+          name='message'
           onChange={messageHandler}
           className={`${feedback === 2 && !validMessage && 'ERROR'} ${validMessage && 'VALID'}`}
           value={messageValue}
@@ -126,7 +129,7 @@ const Form = () => {
               <img src={messengerIcon} alt='Messenger Icon' id='active' />
             </a>
           </Icons>
-          <Button text='Wyślij' onClick={checkValid} />
+          <Button text='Wyślij' onClick={checkValid} type='submit' />
         </IconsAndButton>
         <WaitingWrapper className={waiting && 'show'}>
           {!emailSend ? (
