@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-// ANIMATIONS
 import { contentAnim } from 'assets/animations/animations';
 
 const Wrapper = styled(motion.section)`

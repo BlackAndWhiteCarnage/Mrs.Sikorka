@@ -56,7 +56,7 @@ export const Line = styled.div`
   background: ${({ theme }) => theme.colors.beigeDark3};
 `;
 
-export const Text = styled.p`
+export const Text = styled.h1`
   width: 80%;
   text-align: center;
   text-transform: uppercase;

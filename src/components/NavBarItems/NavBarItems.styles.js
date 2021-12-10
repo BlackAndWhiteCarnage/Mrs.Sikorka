@@ -16,7 +16,7 @@ export const Wrapper = styled(motion.nav)`
   }
 `;
 
-export const NavItemsWrapper = styled.ul`
+export const NavItemsWrapper = styled.div`
   margin: auto;
   height: 100%;
   max-width: 1250px;

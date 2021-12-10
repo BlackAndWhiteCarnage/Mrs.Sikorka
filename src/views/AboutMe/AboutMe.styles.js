@@ -14,7 +14,7 @@ export const Header = styled.h2`
   }
 `;
 
-export const Content = styled.article`
+export const Content = styled.div`
   position: relative;
   width: 100%;
   max-width: 600px;

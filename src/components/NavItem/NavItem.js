@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// STYLES
 import { Wrapper } from './NavItem.styles';
 
 const NavItem = ({ to, text, className }) => (

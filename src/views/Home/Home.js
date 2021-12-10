@@ -1,28 +1,20 @@
 import React from 'react';
-// HELPERS
-import Keywords from 'helpers/Keywords';
-// IMAGES
 import EwelinaSikoraImg from 'assets/images/EwelinaSikoraImage.jpg';
 import CoffeAndLaptopImg from 'assets/images/CoffeAndLaptopImage.jpg';
-// VECTORS
 import Vectors from 'components/Vectors/Vectors';
-// DATA
 import { homeVectosPaths } from 'data/vectorsParams';
-// STYLES
 import { Wrapper, TextWrapper, Line, Text, ImageWrapperAbsolute, ImageWrapperRelative, Image, Name } from './Home.styles';
-// ANIMATIONS
 import { pageAnimation, slide } from 'assets/animations/animations';
 import { motion } from 'framer-motion';
 import { nameVectosPaths } from 'data/vectorsParams';
 
 const Home = () => (
   <>
-    <Keywords text='social media, obsługa social mediów, obsługa Facebook, obsługa Instagram, agencja reklamowa' />
     <Vectors vectorsData={homeVectosPaths} />
     <Wrapper variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
       <ImageWrapperAbsolute className='firstImage' variants={slide}>
         <ImageWrapperRelative className='firstImage'>
-          <Image src={EwelinaSikoraImg} alt='Ewelina Sikora' />
+          <Image src={EwelinaSikoraImg} alt='Zdjęcie Eweliny Sikory' />
           <Name width='58' height='284' viewBox='0 0 58 284' fill='none'>
             <motion.path
               d={nameVectosPaths.path}
@@ -37,7 +29,7 @@ const Home = () => (
       </ImageWrapperAbsolute>
       <ImageWrapperAbsolute className='secondImage' variants={slide}>
         <ImageWrapperRelative className='secondImage'>
-          <Image src={CoffeAndLaptopImg} alt='' />
+          <Image src={CoffeAndLaptopImg} alt='Zdjęcie pączka, kawy i laptopa' />
         </ImageWrapperRelative>
       </ImageWrapperAbsolute>
       <TextWrapper>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.button`
   width: 50px;
   height: 40px;
   display: flex;
@@ -8,6 +8,8 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  background: none;
+  border: none;
   @media screen and (min-width: 1200px) {
     display: none;
   }

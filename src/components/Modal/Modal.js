@@ -1,10 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// COMPONENTS
 import NavItem from 'components/NavItem/NavItem';
-// HELPERS
 import BlockScroll from 'helpers/BlockScroll';
-// STYLES
 import { Wrapper, ModalItems } from './Modal.styles';
 
 const Modal = ({ toggleModal, toggleModalHandler }) => (

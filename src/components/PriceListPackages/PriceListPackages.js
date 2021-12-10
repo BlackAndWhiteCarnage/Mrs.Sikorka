@@ -1,15 +1,10 @@
 import React, { useState, useRef } from 'react';
-// COMPONENTS
 import Button from 'components/Button/Button';
 import Package from 'components/Package/Package';
 import ContentWrapper from 'hoc/ContentWrapper';
-// HELPERS
 import BlockScroll from 'helpers/BlockScroll';
-// PACKAGES DATA
 import { socialMediaPackages, influencerMarketingPackages, productPhotographyPackages } from 'data/servicesPackages';
-// ICONS
 import alertIcon from 'assets/icons/alert-icon.svg';
-// STYLES
 import { PackagesWrapper, PackagesOptions, ButtonsWrapper, Packages, InfoModal } from './PriceListPackages.styles';
 
 const PriceListPackages = () => {
@@ -66,7 +61,7 @@ const PriceListPackages = () => {
                 onClick={() => changeDataHandler(influencerMarketingPackages)}
                 className={data === influencerMarketingPackages && 'active'}
               />
-              <Button icon={alertIcon} alt='Alert Icon' onClick={showInfoHandler} />
+              <Button icon={alertIcon} alt='Ikonka alertu' onClick={showInfoHandler} />
             </ButtonsWrapper>
           </PackagesOptions>
           <Packages className={toggle && 'hide'}>

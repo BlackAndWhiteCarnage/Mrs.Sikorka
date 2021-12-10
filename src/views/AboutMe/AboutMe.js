@@ -1,13 +1,8 @@
 import React from 'react';
-// COMPONENTS
 import ViewTitle from 'components/ViewTitle/ViewTitle';
 import Button from 'components/Button/Button';
 import ContentWrapper from 'hoc/ContentWrapper';
-// HELPERS
-import Keywords from 'helpers/Keywords';
-// VECTORS
 import { aboutMeVectosPaths } from 'data/vectorsParams';
-// IMAGES
 import img1 from 'assets/images/portfolioImages/img1.jpg';
 import img2 from 'assets/images/portfolioImages/img2.jpg';
 import img3 from 'assets/images/portfolioImages/img3.jpg';
@@ -17,12 +12,10 @@ import img6 from 'assets/images/portfolioImages/img6.jpg';
 import img7 from 'assets/images/portfolioImages/img7.jpg';
 import img8 from 'assets/images/portfolioImages/img8.jpg';
 import img9 from 'assets/images/portfolioImages/img9.jpg';
-// STYLES
 import { Header, Content, ButtonsWrapper, ImagesWrapper } from './AboutMe.styles';
 
 const AboutMe = () => (
   <>
-    <Keywords text='agencja marketingowa, prowadzenie social mediów, fotografia produktowa' />
     <ViewTitle
       titleFirstPart='Nazywam się Ewelina Sikora, a moje największe pasje'
       titleSecondPart='to marketing, fotografia i media społecznościowe.'
@@ -46,15 +39,15 @@ const AboutMe = () => (
         />
       </ButtonsWrapper>
       <ImagesWrapper>
-        <img src={img1} alt='' />
-        <img src={img2} alt='' />
-        <img src={img3} alt='' />
-        <img src={img4} alt='' />
-        <img src={img5} alt='' />
-        <img src={img6} alt='' />
-        <img src={img7} alt='' />
-        <img src={img8} alt='' />
-        <img src={img9} alt='' />
+        <img src={img1} alt='Zdjęcie żelu micelarnego' />
+        <img src={img2} alt='Zdjęcie szamponu oraz odżywki' />
+        <img src={img3} alt='Zdjęcie peelingu cukrowo-solnego' />
+        <img src={img4} alt='Zdjęcie peelingu enzymatycznego' />
+        <img src={img5} alt='Zdjęcie peelingu cukrowo-solnego' />
+        <img src={img6} alt='Zdjęcie żelu, żelu pod prysznic oraz kremowego masła' />
+        <img src={img7} alt='Zdjęcie kremu BB' />
+        <img src={img8} alt='Zdjęcie czerwonej szminki' />
+        <img src={img9} alt='Zdjęcie swatcha czerwonej szminki' />
       </ImagesWrapper>
     </ContentWrapper>
   </>

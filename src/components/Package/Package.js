@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// STYLES
 import { Wrapper, PackageTitle, PackageName, PackageListItem, Price, PackageList } from './Package.styles';
 
 const Package = ({ name, services, price, half }) => {

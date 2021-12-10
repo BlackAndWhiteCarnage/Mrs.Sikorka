@@ -3,13 +3,11 @@ import Navigation from 'components/Navigation/Navigation';
 import { useLocation } from 'react-router';
 import { Switch, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-// VIEWS
 import Home from 'views/Home/Home';
 import PriceList from 'views/PriceList/PriceList';
 import Offer from 'views/Offer/Offer';
 import AboutMe from 'views/AboutMe/AboutMe';
 import Contact from 'views/Contact/Contact';
-// HELPERS
 import ScrollTop from 'helpers/ScrollTop';
 
 function Root() {

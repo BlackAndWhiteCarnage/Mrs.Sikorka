@@ -1,10 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// COMPONENTS
 import Vectors from 'components/Vectors/Vectors';
-// STYLES
 import { Wrapper, TitleWrapper } from './ViewTitle.styles';
-// ANIMATIONS
 import { pageAnimation } from 'assets/animations/animations';
 
 const SectionTitle = ({ titleFirstPart, titleSecondPart, vectorsData }) => (

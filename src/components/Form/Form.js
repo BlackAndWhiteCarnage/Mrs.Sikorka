@@ -1,12 +1,9 @@
 import React, { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
-// COMPONENTS
 import ContentWrapper from 'hoc/ContentWrapper';
 import Button from 'components/Button/Button';
-// ICONS
 import instagramIcon from 'assets/icons/instagram-icon.svg';
 import messengerIcon from 'assets/icons/messenger-icon.svg';
-// STYLES
 import { FormWrapper, Label, Input, Textarea, IconsAndButton, Icons, WaitingWrapper } from './Form.styles';
 
 const Form = () => {
@@ -123,10 +120,10 @@ const Form = () => {
         <IconsAndButton>
           <Icons>
             <a href='https://www.instagram.com/mrs.sikorka/' target='_blank' rel='noreferrer'>
-              <img src={instagramIcon} alt='Instagram Icon' id='active' />
+              <img src={instagramIcon} alt='Ikonka Instagrama' id='active' />
             </a>
             <a href='http://m.me/ewelina.hiller/' target='_blank' rel='noreferrer'>
-              <img src={messengerIcon} alt='Messenger Icon' id='active' />
+              <img src={messengerIcon} alt='Ikonka Messengera' id='active' />
             </a>
           </Icons>
           <Button text='Wyślij' onClick={checkValid} type='submit' />

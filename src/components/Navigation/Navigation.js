@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// COMPONENTS
 import Modal from 'components/Modal/Modal';
 import NavBarItems from 'components/NavBarItems/NavBarItems';
 

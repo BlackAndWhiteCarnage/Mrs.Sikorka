@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// STYLES
 import { Wrapper, Line } from './Hamburger.styles';
 
 const Hamburger = ({ toggleModal, toggleModalHandler }) => (
