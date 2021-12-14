@@ -4,26 +4,26 @@ import { Wrapper } from './Button.styles';
 import { Link } from 'react-router-dom';
 
 const Button = ({ text, className, onClick, icon, alt, href, linkTo }) => {
-  const renderSpecyficTag = () => {
-    if (text && !href && !linkTo) {
-      return <p id='active'>{text}</p>;
-    } else if (icon) {
-      return <img src={icon} alt={alt} id='active' />;
-    } else if (href) {
-      return (
-        <a href={href} target='_blank' id='active' rel='noreferrer'>
-          {text}
-        </a>
-      );
-    } else if (linkTo) {
-      return <Link to={linkTo}>{text}</Link>;
-    }
-  };
-
   return (
-    <Wrapper className={className} onClick={onClick} id='active'>
-      {renderSpecyficTag()}
-    </Wrapper>
+    <>
+      {text && !href && !linkTo ? (
+        <Wrapper className={className} onClick={onClick}>
+          {text}
+        </Wrapper>
+      ) : !text && icon ? (
+        <Wrapper onClick={onClick}>
+          <img src={icon} alt={alt} />
+        </Wrapper>
+      ) : text && linkTo && !icon ? (
+        <Wrapper as={Link} to={linkTo}>
+          {text}
+        </Wrapper>
+      ) : (
+        <Wrapper as='a' href={href} target='_blank' rel='noreferrer'>
+          {text}
+        </Wrapper>
+      )}
+    </>
   );
 };
 

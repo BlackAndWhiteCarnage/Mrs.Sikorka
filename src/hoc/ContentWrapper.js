@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { contentAnim } from 'assets/animations/animations';
 
-const Wrapper = styled(motion.section)`
+const Wrapper = styled(motion.main)`
   width: 100%;
   min-height: 100vh;
   display: flex;

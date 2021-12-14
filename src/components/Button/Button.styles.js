@@ -8,6 +8,7 @@ export const Wrapper = styled.button`
   height: 40px;
   width: auto;
   display: flex;
+  padding: 10px;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
@@ -15,15 +16,13 @@ export const Wrapper = styled.button`
   margin: 5px;
   transition: 0.25s ease;
   border: 2px solid ${({ theme }) => theme.colors.beigeDark3};
-  a,
-  p,
+  color: ${({ theme }) => theme.colors.darkGrey};
+  text-decoration: none;
   img {
-    font-size: ${({ theme }) => theme.fontSize.m};
     width: 100%;
     padding: 20px;
-    text-decoration: none;
-    color: ${({ theme }) => theme.colors.darkGrey};
     transition: 0.25s ease;
+    pointer-events: none;
   }
   &::before {
     content: '';
@@ -31,7 +30,7 @@ export const Wrapper = styled.button`
     bottom: 0;
     width: 0%;
     height: 10%;
-    transition: 0.5s 0.25s ease;
+    transition: 0.15s ease;
     z-index: -1;
   }
   &::after {
@@ -46,18 +45,13 @@ export const Wrapper = styled.button`
   @media screen and (min-width: 1250px) {
     &:hover {
       transition: 0.5s 0.25s ease;
-      p,
-      a {
-        transition: 0.5s ease;
-        color: ${({ theme }) => theme.colors.white};
-      }
       &::before {
-        transition: 0.25s ease;
+        transition: 0.25s 0.25s ease;
         width: 100%;
         background: ${({ theme }) => theme.colors.beigeDark2};
       }
       &::after {
-        transition: 0.25s 0.25s ease;
+        transition: 0.25s 0.5s ease;
         width: 100%;
         height: 100%;
         background: ${({ theme }) => theme.colors.beigeDark3};
@@ -67,11 +61,6 @@ export const Wrapper = styled.button`
   &.active {
     pointer-events: none;
     background: ${({ theme }) => theme.colors.beigeDark3};
-    p,
-    a {
-      transition: 0.5s ease;
-      color: ${({ theme }) => theme.colors.white};
-    }
   }
   @media screen and (max-width: 1250px) {
     font-size: ${({ theme }) => theme.fontSize.l};

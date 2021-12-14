@@ -8,10 +8,10 @@ const SectionTitle = ({ titleFirstPart, titleSecondPart, vectorsData }) => (
   <Wrapper>
     <Vectors vectorsData={vectorsData} />
     <TitleWrapper variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
-      <h2>
+      <h1>
         {titleFirstPart}
         <span> {titleSecondPart}</span>
-      </h2>
+      </h1>
     </TitleWrapper>
   </Wrapper>
 );

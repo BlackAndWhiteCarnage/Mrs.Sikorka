@@ -22,7 +22,7 @@ export const TitleWrapper = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  h2 {
+  h1 {
     background: ${({ theme }) => theme.colors.white};
     padding: 50px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
