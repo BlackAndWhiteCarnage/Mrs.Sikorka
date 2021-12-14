@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+<img src="./src/assets/icons/logo-icon.svg" alt="Mrs.Sikorka logo" width='100%'/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
+<br />
 
-## Available Scripts
+# Mrs.Sikorka - Influencer marketing 💻
 
-In the project directory, you can run:
+https://mrssikorka.pl/
 
-### `npm start`
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### About Project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Whole project is a simple website for Mrs.Ewelina, she's pretty good in influencer marketing and products photography. That's why offer her my help after
+seeing that she has only her Instagram page.
 
-### `npm test`
+<br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Used Technologies
+* React - version 17.0.2
+* React-router-dom - version 5.3.0
+* Styled-components - version 5.3.1
+* Framer-motion - version 4.1.17
+* Email.js - version 3.2.0
 
-### `npm run build`
+<br />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Playing with .svgs path's to animate them
+- Price list (toggle between different services)
+- Nice looking cursor
+- Email sending
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br />
 
-### `npm run eject`
+## How to run?
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone the project
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  git clone https://github.com/BlackAndWhiteCarnage/Mrs.Sikorka
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Install dependencies
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+  npm install
+```
 
-## Learn More
+3. Run project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br />
 
-### Code Splitting
+## Quick Preview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Home Page
+<img src="./readmeImages/1.png" alt="Home Page" width='100%'/>
 
-### Analyzing the Bundle Size
+### About Me
+<img src="./readmeImages/2.png" alt="About Me" width='100%'/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Price List
+<img src="./readmeImages/3.png" alt="Price List" width='100%'/>
 
-### Making a Progressive Web App
+### Contact
+<img src="./readmeImages/4.png" alt="Contact" width='100%'/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br />
 
-### Advanced Configuration
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [@BlackAndWhiteCarnage](https://github.com/BlackAndWhiteCarnage)

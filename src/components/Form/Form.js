@@ -1,6 +1,5 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import useForm from 'helpers/useForm';
-import emailjs from 'emailjs-com';
 import ContentWrapper from 'hoc/ContentWrapper';
 import Button from 'components/Button/Button';
 import instagramIcon from 'assets/icons/instagram-icon.svg';
