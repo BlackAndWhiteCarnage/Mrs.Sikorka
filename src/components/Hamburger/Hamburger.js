@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Wrapper, Line } from './Hamburger.styles';
 
 const Hamburger = ({ toggleModal, toggleModalHandler }) => (
-  <Wrapper onClick={toggleModalHandler}>
+  <Wrapper onClick={toggleModalHandler} title='Nawigacja - Menu'>
     <Line className={`top ${toggleModal && 'toggle'}`}>
       <div />
       <div />

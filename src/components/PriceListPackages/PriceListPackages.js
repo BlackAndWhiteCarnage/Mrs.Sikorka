@@ -61,7 +61,7 @@ const PriceListPackages = () => {
                 onClick={() => changeDataHandler(influencerMarketingPackages)}
                 className={data === influencerMarketingPackages && 'active'}
               />
-              <Button icon={alertIcon} alt='Ikonka alertu' onClick={showInfoHandler} />
+              <Button icon={alertIcon} alt='Ikonka alertu' onClick={showInfoHandler} title='Więcej informacji' />
             </ButtonsWrapper>
           </PackagesOptions>
           <Packages className={toggle && 'hide'}>

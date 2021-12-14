@@ -119,10 +119,10 @@ const Form = () => {
         />
         <IconsAndButton>
           <Icons>
-            <a href='https://www.instagram.com/mrs.sikorka/' target='_blank' rel='noreferrer'>
+            <a href='https://www.instagram.com/mrs.sikorka/' target='_blank' rel='noreferrer' title='Sprawdź mojego Instagrama!'>
               <img src={instagramIcon} alt='Ikonka Instagrama' id='active' />
             </a>
-            <a href='http://m.me/ewelina.hiller/' target='_blank' rel='noreferrer'>
+            <a href='http://m.me/ewelina.hiller/' target='_blank' rel='noreferrer' title='Napisz na Messenger!'>
               <img src={messengerIcon} alt='Ikonka Messengera' id='active' />
             </a>
           </Icons>

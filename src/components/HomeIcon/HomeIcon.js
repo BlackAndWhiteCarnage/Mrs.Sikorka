@@ -4,7 +4,7 @@ import homeIcon from 'assets/icons/home-icon.svg';
 import { Wrapper, IconWrapper } from './HomeIcon.styles';
 
 const HomeIcon = ({ location, toggleModalHandler }) => (
-  <Wrapper className={location !== '/' && 'show'} onClick={() => toggleModalHandler(false)} id='active'>
+  <Wrapper className={location !== '/' && 'show'} onClick={() => toggleModalHandler(false)} id='active' title='Powrót do strony głównej'>
     <IconWrapper className={location !== '/' && 'show'} to='/' tabIndex={location === '/' ? -1 : 1} id='active'>
       <img src={homeIcon} alt='Ikonka strony głównej' id='active' />
     </IconWrapper>
