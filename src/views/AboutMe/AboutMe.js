@@ -27,7 +27,7 @@ const AboutMe = () => (
         <p>
           Z pasją i zapałem kompleksowo zajmie się profilem Twojej firmy na Instagramie, Facebooku, TikToku? Stworzy dopasowaną do Twoich potrzeb
           strategię i harmonogram działań, pomoże w budowaniu profesjonalnego wizerunku, pozyska nowych klientów, pomoże zwiększyć sprzedaż i wykona
-          piękne zdjęcia produktowe? Właśnie znalazłeś/aś! Od lat pomagam firmom takim jak Twoja.{' '}
+          piękne zdjęcia produktowe? Właśnie znalazłeś/aś! Od lat pomagam firmom takim jak Twoja.
           <span>Przeprowadzam metamorfozy Instagramowych feedów i statystyk.</span>
         </p>
       </Content>

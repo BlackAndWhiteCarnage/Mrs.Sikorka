@@ -13,9 +13,11 @@ const Offer = () => (
         {offersData.map(({ title, offersList }) => (
           <OfferWrapper key={title}>
             <Title>{title}</Title>
-            {offersList.map((list, i) => (
-              <OfferItem key={i}>{list}</OfferItem>
-            ))}
+            <ul>
+              {offersList.map((list, i) => (
+                <OfferItem key={i}>{list}</OfferItem>
+              ))}
+            </ul>
           </OfferWrapper>
         ))}
       </Offers>

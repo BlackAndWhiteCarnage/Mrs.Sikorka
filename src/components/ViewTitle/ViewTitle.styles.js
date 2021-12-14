@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.div`
   position: relative;
   width: 100%;
   height: calc(100vh - 75px);

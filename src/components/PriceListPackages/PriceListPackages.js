@@ -44,7 +44,7 @@ const PriceListPackages = () => {
         <BlockScroll toggle={showInfo} />
         <PackagesWrapper>
           <PackagesOptions ref={ref}>
-            <span>Czego dokładnie szukasz?</span>
+            <h2>Czego dokładnie szukasz?</h2>
             <ButtonsWrapper>
               <Button
                 text='Social Media'

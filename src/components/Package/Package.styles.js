@@ -79,7 +79,7 @@ export const ButtonsWrapper = styled.div`
   }
 `;
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.article`
   width: 31%;
   height: fit-content;
   padding: 50px 40px;
@@ -103,7 +103,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const PackageTitle = styled.div`
+export const PackageTitle = styled.h5`
   height: 20px;
   width: 100%;
   display: flex;

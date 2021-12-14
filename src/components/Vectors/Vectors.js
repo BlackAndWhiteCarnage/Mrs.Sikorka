@@ -7,7 +7,7 @@ import { fade } from 'assets/animations/animations';
 const Vectors = ({ vectorsData }) => (
   <Wrapper variants={fade} initial='hidden' animate='show' exit='exit'>
     {vectorsData.map(({ path, duration, delay }, i) => (
-      <Vector fill='none' viewBox='0 0 1920 447' key={i}>
+      <Vector fill='none' viewBox='0 0 1920 447' key={path}>
         <motion.path
           d={path}
           stroke='#EEDDD0'

@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { Wrapper } from './Button.styles';
 import { Link } from 'react-router-dom';
 
-const Button = ({ text, className, onClick, icon, alt, href, linkTo, title }) => {
+const Button = ({ text, className, onClick, icon, alt, href, linkTo, title, type }) => {
   return (
     <>
       {text && !href && !linkTo ? (
-        <Wrapper className={className} onClick={onClick}>
+        <Wrapper className={className} onClick={onClick} type={type}>
           {text}
         </Wrapper>
       ) : !text && icon ? (

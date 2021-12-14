@@ -14,7 +14,7 @@ export const Header = styled.h2`
   }
 `;
 
-export const Content = styled.div`
+export const Content = styled.article`
   position: relative;
   width: 100%;
   max-width: 600px;
@@ -58,7 +58,7 @@ export const ButtonsWrapper = styled.div`
   }
 `;
 
-export const ImagesWrapper = styled.section`
+export const ImagesWrapper = styled.div`
   width: 100%;
   height: auto;
   max-width: 600px;

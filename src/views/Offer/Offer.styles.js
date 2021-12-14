@@ -9,7 +9,7 @@ export const Offers = styled.article`
   }
 `;
 
-export const OfferWrapper = styled.div`
+export const OfferWrapper = styled.section`
   width: 100%;
   height: 100%;
   display: flex;
@@ -18,7 +18,7 @@ export const OfferWrapper = styled.div`
   margin-bottom: 20px;
 `;
 
-export const Title = styled.div`
+export const Title = styled.h3`
   width: 100%;
   font-size: ${({ theme }) => theme.fontSize.xl};
   letter-spacing: 3px;
@@ -29,8 +29,9 @@ export const Title = styled.div`
   margin-bottom: 40px;
 `;
 
-export const OfferItem = styled.div`
+export const OfferItem = styled.li`
   position: relative;
+  list-style: none;
   width: calc(100% - 10px);
   font-size: ${({ theme }) => theme.fontSize.l};
   margin-bottom: 35px;
