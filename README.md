@@ -11,7 +11,7 @@ https://mrssikorka.pl/
 
 ### About Project
 
-Whole project is a simple website for Mrs. Ewelina, she's pretty good in influencer marketing and products photography. That's why offered her my help after I've saw that she has only her Instagram page.
+Whole project is a simple website for Mrs. Ewelina, she's pretty good at influencer marketing and products photography. When I saw that she's only using Instagram for her business I've offered my help.
 
 <br />
 
@@ -29,7 +29,7 @@ Whole project is a simple website for Mrs. Ewelina, she's pretty good in influen
 - Playing with .svgs path's to animate them
 - Price list (toggle between different services)
 - Nice looking cursor
-- Email sending
+- Email sending + form validation
 
 <br />
 
