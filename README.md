@@ -1,4 +1,8 @@
 <img src="https://github.com/BlackAndWhiteCarnage/Mrs.Sikorka/assets/71930296/62ae5014-c907-4232-a60d-e18650fabe3f" alt="" width='100%'/>
+
+<br />
+<br />
+
 <img src="./src/assets/icons/logo-icon.svg" alt="Mrs.Sikorka logo" width='100%'/>
 
 <br />
