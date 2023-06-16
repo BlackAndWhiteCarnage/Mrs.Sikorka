@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/71930296/236704313-a3486252-8e95-467d-a198-31f7bc815c5f.svg" alt="" width='100%'/>
+<img src="https://github.com/BlackAndWhiteCarnage/Mrs.Sikorka/assets/71930296/62ae5014-c907-4232-a60d-e18650fabe3f" alt="" width='100%'/>
 <img src="./src/assets/icons/logo-icon.svg" alt="Mrs.Sikorka logo" width='100%'/>
 
 <br />
