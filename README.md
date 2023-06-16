@@ -10,8 +10,6 @@
 
 # Mrs.Sikorka - Influencer marketing 💻
 
-https://mrssikorka.pl/
-
 <br />
 
 ### About Project
